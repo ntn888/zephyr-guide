@@ -41,7 +41,7 @@ The reference page for [GPIO](https://docs.zephyrproject.org/latest/reference/pe
 ### Example - add an external button
 This will require writing an overlay file. And use the GPIO API.
 
-First create the file ```boards/``` folder in a new app directory. See [Installation](./chapter_1.md#Installation) for creating an empty app template. And in the directory create the file "stm32_min_dev_blue.overlay", with the following contents. This will be the device tree for the external button addition.
+First create the ```boards/``` folder in a new app directory. See [Installation](./chapter_1.md#Installation) for creating an empty app template. And in the directory create the file "stm32_min_dev_blue.overlay", with the following contents. This will be the device tree for the external button addition.
 ```
 / {
 	gpio_keys {
