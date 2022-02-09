@@ -1,7 +1,7 @@
 
 # Introduction
 
-Zephyr is currently the preffered RTOS for new embedded product projects. Especially for IoT related projects. Considering that 99% of embedded projects these days is IoT, it is no surprise that Zephyr is the current mainline RTOS taking on the previous mainstay the freeRTOS.
+Zephyr is currently the prefered RTOS for new embedded product projects. Especially for IoT related projects. Considering that 99% of embedded projects these days is IoT, it is no surprise that Zephyr is the current mainline RTOS taking on the previous mainstay the freeRTOS.
 
 In this text we will go through the basics of Zephyr, enough to get started quickly. Some advanced topics are later covered including a guide porting to a new board.
 
