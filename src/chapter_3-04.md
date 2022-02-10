@@ -15,3 +15,7 @@ time_stamp = k_uptime_get_32();
 milliseconds_spent = k_uptime_delta(&time_stamp);
 
 ```
+
+## Hardware Timers with Interrupts
+
+< study the samples/drivers/counters/alarm >

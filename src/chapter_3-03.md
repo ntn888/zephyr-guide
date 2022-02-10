@@ -2,7 +2,33 @@
 
 We will continue on our discussions with the GPIO with looking at interrupts. First for some prerequisites...
 
-< Kernel-> interrupts >
+An Interrupt Service Routine (ISR) has the following properties:
+- IRQ signal (that triggers the ISR)
+- priority level
+- interrupt handler function
+- argument value passed to the function
+
+Other notable facts:
+- Only a single ISR can be defined for an IRQ
+- But multiple ISRs can utilise the same function
+- Zephyr supports interrupt nesting. ie, higher priority interrupt can interrupt a running ISR
+
+Use the following functions to setup an ISR:
+```
+IRQ_CONNECT(MY_DEV_IRQ, MY_DEV_PRIO, my_isr, MY_ISR_ARG, MY_IRQ_FLAGS);
+irq_enable(MY_DEV_IRQ);
+```
+
+See [Implementation](https://docs.zephyrproject.org/latest/reference/kernel/other/interrupts.html#id5) for an example.
+
+### Disabling interrupts
+
+To prevent IRQs when a particular thread is running use the functions inside that thread to block (and unblock) any interrupts.
+```
+irq_lock()
+irq_unlock()
+```
+Note that if this thread is pre-empted by another one and is not the active thread, interrupts can occur.
 
 ## GPIO Interrupts
 
