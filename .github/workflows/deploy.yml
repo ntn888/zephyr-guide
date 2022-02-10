@@ -32,7 +32,12 @@ jobs:
         git add .
         git commit -m "Deploy $GITHUB_SHA to gh-pages"
         git push --force
-    - name: Deploy GitHub Pages
+    - name: Checkout gh-pages
+      uses: actions/checkout@v2
+      with:
+        ref: 'gh-pages'
+    
+    - name: Deploy Hostgator Pages
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
         server: ${{ secrets.FTP_HOST }}
