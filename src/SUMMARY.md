@@ -13,3 +13,7 @@
     - [Interrupts](./chapter_3-03.md)
     - [Timers](./chapter_3-04.md)
     - [PWM](./chapter_3-05.md)
+
+- [Kernel Facilities - Messaging](./chapter_4.md)
+
+- [Device Driver Intro](./chapter_5.md)
