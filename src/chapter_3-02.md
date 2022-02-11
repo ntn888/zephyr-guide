@@ -68,8 +68,6 @@ Using the concepts discussed above; here is the final code for button prompted b
 ```
 #include <zephyr.h>
 #include <drivers/gpio.h>
-#include <sys/util.h>
-#include <inttypes.h>
 
 /* 1000 msec = 1 sec */
 #define SLEEP_TIME_MS   1000
@@ -115,4 +113,17 @@ void main(void)
 	}
 }
 ```
+
+We will now discuss the code above in detail.
+
+The first line includes the 'zephyr.h' file which in turn includes the kernel. Which enables the kernel subsystem as we saw in the previous chapter.
+
+The second line speaks for itself. It includes the 'gpio' related API functions that we will use here.
+
+Further down we use the function ```GPIO_DT_SPEC_GET``` to initialise a LED device C structure, as we have seen in the previous section. We do the same for 'specb' the struct for the button pin.
+
+Then inside main the first thing we do is do the mandatory check to see if the device is ready for use. This indicates whether the provided device pointer is for a device known to be in a state where it can be used with its standard API. Using a device that does not return true for this check, results in undefined behaviour.
+
+This is followed by the pin configuration as we have seen earlieer. Inside the while loop is the program logic. It simply relays the pin state of the button to the LED pin.
+
 This is a very basic demonstration of push button with no debounce mechanism. The led may inadvertently toggle multiple times for a single push.
