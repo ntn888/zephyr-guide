@@ -38,7 +38,7 @@ In main:
 		return;
 	}
 ```
-where TIMER is bound to an appropriately initiated device in the tree.
+where TIMER is bound to an appropriately initiated device in the tree. As long as your board/chip is in the Zephyr supported list this has been done for you! All you have to do is to define TIMER to the selected device in your application.
 
 Then the basic principle is that we set a callback function using the ```alarm_cfg.callback``` property and setup the 'alarm' using ```counter_set_channel_alarm()```. For this we initiate a ```counter_alarm_cfg``` struct to hold the desired counter settings. Also set the desired delay with ```alarm_cfg.ticks```. See the official [explanation](https://docs.zephyrproject.org/latest/reference/peripherals/counter.html#c.counter_alarm_cfg). Finally call the set alarm function. It has a very similar structure to setting interrupts as seen in the previous topic, considering the alarm is basically an interrupt.
 

@@ -16,7 +16,7 @@ RTOSes include a component called the *kernel*. The kernel is responsible for ta
 
 Multitasking can be achieved without an RTOS. This can be done in a *super-loop*. Small systems of low complexity are designed this way. It is upto the application to manage the scheduling between tasks. But this is error-prone and most notably, if a code change is made, the timing of the loop is affected.
 
-The RTOS abstracts this away for us. And brings in the concept called *threads*. A firmware designer splits the related work responsible for a portion of the solution to be done into individual threads. Each thread is assigned a *priority*. Each thread is an infinite loop that can be in any one of the 6 states; see the diagram below.
+The RTOS abstracts this away for us. And brings in the concept called *threads*. A firmware designer splits the related work responsible for a portion of the solution to be done into individual threads. The kernel performs the *context switching*, ie: save the current thread context (CPU registers) in the current task storage area then resume execution of new code[^1]. Each thread is assigned a *priority*. Each thread is an infinite loop that can be in any one of the 6 states; see the diagram below.
 
 A task is ready when it can execute but its priority is less than the currently running task. A task is running when it has control of the CPU. A task is waiting when it requires the occurrence of an event (for example, waiting for an I/O operation to complete, a shared resource to be available, a timing pulse to occur, or time to expire). Finally a task is in suspended state when it is explicitly requested by the code (either within itself or another thread).
 
@@ -26,13 +26,14 @@ A task is ready when it can execute but its priority is less than the currently 
 You may want to ask, when should I use an RTOS?
 
 \- The answer is ALWAYS.
-These days the embedded system landscape has changed that such is the case. For example the bluepill[^1] with 128k flash and 20K RAM can be had for a fraction of a dollar.
+These days the embedded system landscape has changed that such is the case. For example the bluepill[^2] with 128k flash and 20K RAM can be had for a fraction of a dollar.
 
 
 In addition to the kernel, an RTOS can include device drivers and peripheral management as in the case of Zephyr.
 Now that we have an understanding of the kernel and threads, let's see the implementation in Zephyr.
 
-[^1]: https://docs.zephyrproject.org/2.6.0/boards/arm/stm32_min_dev/doc/index.html
+[^1]: This adds overhead, practically the only compromise in using a well designed RTOS
+[^2]: https://docs.zephyrproject.org/2.6.0/boards/arm/stm32_min_dev/doc/index.html
 
 ## Thread Creation
 
