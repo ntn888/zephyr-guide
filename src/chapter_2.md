@@ -18,7 +18,7 @@ Multitasking can be achieved without an RTOS. This can be done in a *super-loop*
 
 The RTOS abstracts this away for us. And brings in the concept called *threads*. A firmware designer splits the related work responsible for a portion of the solution to be done into individual threads. Each thread is assigned a *priority*. Each thread is an infinite loop that can be in any one of the 6 states; see the diagram below.
 
-A task is ready when it can execute but its priority is less than the currently running task. A task is running when it has control of the CPU. A task is waiting when it requires the occurrence of an event (for example, waiting for an I/O operation to complete, a shared resource to be available, a timing pulse to occur, or time to expire). Finally a task is in suspended state when it is explicitly requested by the code (either within itself of another thread).
+A task is ready when it can execute but its priority is less than the currently running task. A task is running when it has control of the CPU. A task is waiting when it requires the occurrence of an event (for example, waiting for an I/O operation to complete, a shared resource to be available, a timing pulse to occur, or time to expire). Finally a task is in suspended state when it is explicitly requested by the code (either within itself or another thread).
 
 ![the 6 thread states](./images/thread_states.svg)
 
@@ -73,6 +73,8 @@ There are two classes of threads:
 Note that thread priorities can be changed later in the program. The kernel natively supports unlimited priority levels. But in a real application, it's as follows:
 
 ![priorities](./images/priorities.svg)
+
+As can be seen, ```CONFIG_NUM_COOP_PRIORITIES``` and ```CONFIG_NUM_PREEMPT_PRIORITIES``` specify the limits of usable priority values for the specific application.
 
 ### Notable thread option
 - K_ESSENTIAL: if the thread terminates, treat as system failure! default: not enabled.
