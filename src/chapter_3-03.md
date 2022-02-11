@@ -92,3 +92,14 @@ void main(void)
 ```
 
 The above is a modified example from the samples folder 'basic->button'. It simply toggles the LED when the button is pushed.
+
+In principle, what we do is write a 'callback function' that'll be called when the interrupt is triggered, by indicating this function in the interrupt setup. The interrupt is setup in the following lines:
+
+```
+gpio_init_callback(&button_cb_data, button_pressed, BIT(specb.pin));
+gpio_add_callback(specb.port, &button_cb_data);
+```
+
+The first argument to the 'init' function is the struct defined for this purpose earlier as type: ```gpio_callback```. The second argument is our desired function to run when interrupt triggers.
+
+Much of the code is hopefully self-explanatory. Study the example and follow this layout when you define interrupts in your application.
