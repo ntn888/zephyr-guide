@@ -29,6 +29,7 @@ You may want to ask, when should I use an RTOS?
 These days the embedded system landscape has changed that such is the case. For example the bluepill[^1] with 128k flash and 20K RAM can be had for a fraction of a dollar.
 
 
+In addition to the kernel, an RTOS can include device drivers and peripheral management as in the case of Zephyr.
 Now that we have an understanding of the kernel and threads, let's see the implementation in Zephyr.
 
 [^1]: https://docs.zephyrproject.org/2.6.0/boards/arm/stm32_min_dev/doc/index.html
@@ -96,4 +97,4 @@ Executes when no work. Puts the processor to auto- powersave. Always has the low
 
 ## Delays
 
-Use ```k_sleep()``` to do a delay within a thread. An inactive thread that's in this state can be woken up from another thread prematurely by ```k_wakeupu()```. If the delay is too short to warrant pre-emption use the blocking function ```k_busy_wait()```.
+Use ```k_sleep()``` to do a delay within a thread. An inactive thread that's in this state can be woken up from another thread prematurely by ```k_wakeup()```. If the delay is too short to warrant pre-emption use the blocking function ```k_busy_wait()```.
