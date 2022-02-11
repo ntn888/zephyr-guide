@@ -33,6 +33,7 @@ In addition to the kernel, an RTOS can include device drivers and peripheral man
 Now that we have an understanding of the kernel and threads, let's see the implementation in Zephyr.
 
 [^1]: This adds overhead, practically the only compromise in using a well designed RTOS
+
 [^2]: https://docs.zephyrproject.org/2.6.0/boards/arm/stm32_min_dev/doc/index.html
 
 ## Thread Creation
