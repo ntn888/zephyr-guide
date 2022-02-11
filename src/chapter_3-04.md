@@ -20,7 +20,7 @@ milliseconds_spent = k_uptime_delta(&time_stamp);
 
 Some discussion on nRF52 HW timers:
 
-![Block schematic for timer/counter](nrf52833_timer-block.svg)
+![Block schematic for timer/counter](./images/nrf52833_timer-block.svg)
 
 The timer/counter runs on the high-frequency clock source (HFCLK) and includes a four-bit (1/2X) prescaler that can divide the timer input clock from the HFCLK controller. Clock source selection between PCLK16M and PCLK1M is automatic according to TIMER base frequency set by the prescaler. The TIMER base frequency is always given as 16 MHz divided by the prescaler value.
 
