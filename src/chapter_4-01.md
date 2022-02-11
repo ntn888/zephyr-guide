@@ -29,15 +29,17 @@ if (‘Access Variable’ is 0) {
 
 ## Using Semaphores
 
-A semaphore is a key that your code acquires in order to continue execution. If the semaphore is already in use, the requesting task is suspended until the semaphore is released by its current owner. In other words, the requesting task says: “Give me the key. If someone else is using it, I am willing to wait for it!” Two types of semaphores exist: binary semaphores and counting semaphores. As its name implies, a binary semaphore can only take two values: 0 or 1. A counting semaphore allows values between 0 and 255, 65,535, or 4,294,967,295, depending on whether the semaphore mechanism is implemented using 8, 16, or 32 bits, respectively. The actual size depends on the kernel used. Along with the semaphore’s value, the kernel also needs to keep track of tasks waiting for the semaphore’s availability.
+A semaphore is a key that your code acquires in order to continue execution. If the semaphore is already in use, the requesting task is suspended until the semaphore is released by its current owner. In other words, the requesting task says: “Give me the key. If someone else is using it, I am willing to wait for it!” Two types of semaphores exist: binary semaphores and counting semaphores. As its name implies, a binary semaphore can only take two values: 0 or 1. A counting semaphore allows values between 0 and 255, 65,535, or 4,294,967,295, depending on whether the semaphore mechanism is implemented using 8, 16, or 32 bits, respectively. In the context of Zephyr, counting semaphores are simply referred as semaphores, while binary semaphores are mutexes(the implementation of which we will see in the next section). The actual size depends on the kernel used. Along with the semaphore’s value, the kernel also needs to keep track of tasks waiting for the semaphore’s availability.
 
 Three operations are done with semaphores:
 - initialise (create)
 - wait (pend)
 - signal (post)
 
-A value must be provided when a semaphore is created. (Waiting list always starts empty). A desired task does a ```WAIT``` operation. Semaphore is checked (if > 0), then decremented and handed over. Else the task waits until a predefined timeout. If the semaphore was busy, when it becomes available the task releases by performing a ```SIGNAL``` operation, the control is yeilded to the waiting task (semaphore is not incremented!). Depending on the RTOS:
-- highest priority task is picked
-- or FIFO
+A value must be provided when a semaphore is created. (Waiting list always starts empty). A desired task does a ```WAIT``` operation. Semaphore is checked (if > 0), then decremented and handed over. Else the task waits until a predefined timeout. If the semaphore was busy, when it becomes available the task releases by performing a ```SIGNAL``` operation, the control is yeilded to the waiting task (semaphore is not incremented!). Any number of threads may wait on a locked mutex simultaneously. When the mutex becomes unlocked it is then locked by the highest-priority thread that has waited the longest.
 
 In a primitive design, the task must know it's about to access a semaphore. So it may be better to *encapsulate* a semaphore.
+
+See the official docs [implementation](https://docs.zephyrproject.org/latest/reference/kernel/synchronization/mutexes.html#implementation) for function definitions. We will now see an example to illustrate the concept...
+
+< example to illustrate the concept >
