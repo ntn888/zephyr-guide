@@ -15,5 +15,8 @@
     - [PWM](./chapter_3-05.md)
 
 - [Kernel Facilities - Messaging](./chapter_4.md)
+    - [Semaphores](./chapter_4-01.md)
+    - [Mutex](./chapter_4-02.md)
+    - [Message Queues](./chapter_4-03.md)
 
 - [Device Driver Intro](./chapter_5.md)
