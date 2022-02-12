@@ -40,7 +40,7 @@ Now that we have an understanding of the kernel and threads, let's see the imple
 
 ```
 define MY_STACK_SIZE 500
-#define MY_PRIORITY 5
+define MY_PRIORITY 5
 
 extern void my_entry_point(void *, void *, void *);
 
@@ -56,9 +56,11 @@ k_tid_t my_tid = k_thread_create(&my_thread_data, my_stack_area,
 
 The preceding code spawns a thread immediately. We will study the arguments of the above function one at a time.
 
-&my_thread_data:
+&my_thread_data: this is of type struct ```k_thread``` defined in ```thread.h```. see definition in [docs](https://docs.zephyrproject.org/latest/reference/kernel/threads/index.html#structk__thread).
 
-my_stack_area:
+my_stack_area: Pointer to the stack space. 
+
+The above C structs must be initialised using the above shown functions before using in the creation function! See [here](https://docs.zephyrproject.org/latest/reference/kernel/threads/index.html#c.k_thread_create) for more info.
 
 my_entry_point: the entry point function (user defined), that takes upto 3 arguments. It's passed 'NULL' in this example.
 
