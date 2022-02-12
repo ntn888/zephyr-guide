@@ -56,17 +56,17 @@ k_tid_t my_tid = k_thread_create(&my_thread_data, my_stack_area,
 
 The preceding code spawns a thread immediately. We will study the arguments of the above function one at a time.
 
-&my_thread_data: this is of type struct ```k_thread``` defined in ```thread.h```. see definition in [docs](https://docs.zephyrproject.org/latest/reference/kernel/threads/index.html#structk__thread).
+```&my_thread_data```: this is of type struct ```k_thread``` defined in ```thread.h```. see definition in [docs](https://docs.zephyrproject.org/latest/reference/kernel/threads/index.html#structk__thread).
 
-my_stack_area: Pointer to the stack space. 
+```my_stack_area```: Pointer to the stack space. 
 
 The above C structs must be initialised using the above shown functions before using in the creation function! See [here](https://docs.zephyrproject.org/latest/reference/kernel/threads/index.html#c.k_thread_create) for more info.
 
-my_entry_point: the entry point function (user defined), that takes upto 3 arguments. It's passed 'NULL' in this example.
+```my_entry_point```: the entry point function (user defined), that takes upto 3 arguments. It's passed 'NULL' in this example.
 
-MY_PRIORITY: the priority assigned for this thread. We will discuss priorities in detail below.
+```MY_PRIORITY```: the priority assigned for this thread. We will discuss priorities in detail below.
 
-timeout: the amount of time in milliseconds to wait before the kernel actually starts the thread. Here it's ```K_NO_WAIT```; ie 0.
+```timeout```: the amount of time in milliseconds to wait before the kernel actually starts the thread. Here it's ```K_NO_WAIT```; ie 0.
 
 ## Thread Priorities
 
