@@ -36,7 +36,21 @@ jobs:
       uses: actions/checkout@v2
       with:
         ref: 'gh-pages'
-    
+    - name: Add google-analytics
+      run: |
+        # Add google-analytics
+        find . -type f -iname "*.php" -or -iname "*.htm" -or -iname "*.html" | while read i; do
+        sed -i 's*</HEAD>\|</head>*\
+        <!-- Global site tag (gtag.js) - Google Analytics -->\
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFEFVDH3ZH"></script>\
+        <script>\
+        window.dataLayer = window.dataLayer || [];\
+        function gtag(){dataLayer.push(arguments);}\
+        gtag('js', new Date());\
+        \
+        gtag('config', 'G-FFEFVDH3ZH');\
+        </script>&*' "$i"
+        done
     - name: Deploy Hostgator Pages
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
