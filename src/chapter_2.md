@@ -101,4 +101,58 @@ Executes when no work. Puts the processor to auto- powersave. Always has the low
 
 ## Delays
 
-Use ```k_sleep()``` to do a delay within a thread. An inactive thread that's in this state can be woken up from another thread prematurely by ```k_wakeup()```. If the delay is too short to warrant pre-emption use the blocking function ```k_busy_wait()```.
+Use ```k_sleep()``` to do a delay within a thread. ```k_msleep()``` is a more useful version where you supply the delay in milliseconds. An inactive thread that's in this state can be woken up from another thread prematurely by ```k_wakeup()```. If the delay is too short to warrant pre-emption use the blocking function ```k_busy_wait()```.
+
+## Simple thread example
+
+We will see an example built on the above concepts and study it...
+
+```
+#include <zephyr.h>
+#include <sys/printk.h>
+
+#define MY_STACK_SIZE 1024
+#define MY_PRIORITY 7
+
+void* thread1(void) {
+	while(1) {
+		printk("thread1\n");
+		k_msleep(2000);		// sleep 2s
+	}
+	return NULL;
+}
+
+void* thread2(void) {
+	while(1) {
+		printk("thread2\n");
+		k_msleep(2000);		// sleep 2s
+	}
+	return NULL;
+}
+
+K_THREAD_DEFINE(thread1_id, MY_STACK_SIZE, thread1, NULL, NULL, NULL,
+		MY_PRIORITY, 0, 0);
+K_THREAD_DEFINE(thread2_id, MY_STACK_SIZE, thread2, NULL, NULL, NULL,
+		MY_PRIORITY, 0, 0);
+
+```
+
+The first line includes the 'zephyr.h' file which in turn includes the kernel. Which enables the kernel subsystem which is the subject of our topic here. The second line imports the print subsytem which we use here to print though the UART.
+
+We are writing two individual thread functions (to keep things simple) that'll be invoked next. Here we are using the short-hand method of creating threads whick is functionally similar to the function explained earlier. This is specified in the [docs](https://docs.zephyrproject.org/latest/reference/kernel/threads/index.html#spawning-a-thread).
+
+Open up a terminal and fire-up a *screen* session on the serial device to which the micro:bit is connected to; typically ```/dev/ttyUSB0```. Like so:
+```
+> screen /dev/ttyUSB0 115200
+```
+You should see a similar alternating prompt output:
+```
+thread1
+thread2
+thread1
+thread2
+thread1
+thread2
+thread1
+thread2
+```
