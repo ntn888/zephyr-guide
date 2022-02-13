@@ -158,3 +158,5 @@ thread2
 thread1
 thread2
 ```
+
+You may note that the board you're using has several uart peripherals (eg. uart1, uart2). The default one that's used is defined in you boards dts file. It's defined as ```zephyr,console```In our case it's the uart2.

@@ -3238,9 +3238,11 @@ DOWN_KEYCODE	book/searcher.js	/^        DOWN_KEYCODE = 40,$/;"	v
 Delays	book/chapter_2.html	/^<h2 id="delays"><a class="header" href="#delays">Delays<\/a><\/h2>$/;"	i
 Delays	book/print.html	/^<h2 id="delays"><a class="header" href="#delays">Delays<\/a><\/h2>$/;"	i
 Delays	src/chapter_2.md	/^## Delays$/;"	s	chapter:The Kernel API - Threads
+Device Driver Intro	src/chapter_5.md	/^# Device Driver Intro$/;"	c
 Device Tree 101	book/chapter_3-01.html	/^                        <h1 id="device-tree-101"><a class="header" href="#device-tree-101">Devic/;"	h
 Device Tree 101	book/print.html	/^<div style="break-before: page; page-break-before: always;"><\/div><h1 id="device-tree-101"><a c/;"	h
 Device Tree 101	src/chapter_3-01.md	/^# Device Tree 101$/;"	c
+Disabling interrupts	src/chapter_3-03.md	/^### Disabling interrupts$/;"	S	chapter:Interrupts
 Document not found (404)	book/404.html	/^                        <h1 id="document-not-found-404"><a class="header" href="#document-not-fo/;"	h
 DocumentStore	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	c	class:t
 E	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	c	class:AnonymousFunctiondaebc5021d00.AnonymousFunctiondaebc5021e00
@@ -3248,6 +3250,8 @@ E	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.free
 E	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	c	class:AnonymousFunctiondaebc5027000.AnonymousFunctiondaebc5027100
 E	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	f
 ESCAPE_KEYCODE	book/searcher.js	/^        ESCAPE_KEYCODE = 27,$/;"	v
+EmbeddedFont_1	src/images/race-condition.svg	/^   vert-adv-y="1024">$/;"	d
+EmbeddedFont_1	src/images/race-condition.svg	/^   vert-adv-y="1024">$/;"	i
 EventEmitter	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	c	class:t
 Example - add an external button	book/chapter_3-02.html	/^<h3 id="example---add-an-external-button"><a class="header" href="#example---add-an-external-but/;"	j
 Example - add an external button	book/print.html	/^<h3 id="example---add-an-external-button"><a class="header" href="#example---add-an-external-but/;"	j
@@ -3263,6 +3267,7 @@ GPIO Config	src/chapter_3-02.md	/^## GPIO Config$/;"	s	chapter:GPIO
 GPIO Interrupts	book/chapter_3-03.html	/^<h2 id="gpio-interrupts"><a class="header" href="#gpio-interrupts">GPIO Interrupts<\/a><\/h2>$/;"	i
 GPIO Interrupts	book/print.html	/^<h2 id="gpio-interrupts"><a class="header" href="#gpio-interrupts">GPIO Interrupts<\/a><\/h2>$/;"	i
 GPIO Interrupts	src/chapter_3-03.md	/^## GPIO Interrupts$/;"	s	chapter:Interrupts
+Hardware Timers with Interrupts	src/chapter_3-04.md	/^## Hardware Timers with Interrupts$/;"	s	chapter:Timers
 I	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	f
 I	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	v
 Index	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	c	class:t
@@ -3279,14 +3284,19 @@ Introduction	book/introduction.html	/^                        <h1 id="introducti
 Introduction	book/print.html	/^<div style="break-before: page; page-break-before: always;"><\/div><h1 id="introduction"><a clas/;"	h
 Introduction	src/introduction.md	/^# Introduction$/;"	c
 InvertedIndex	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	c	class:t
+Kernel Facilities - Messaging	src/chapter_4.md	/^# Kernel Facilities - Messaging$/;"	c
 L	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	v
 M	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	C
 MAP	book/searcher.js	/^        var MAP = {$/;"	c	class:escapeHTML
+Markers	src/images/nrf52833_timer-block.svg	/^	<defs id="Markers">$/;"	i
+Message Queues	src/chapter_4-03.md	/^# Message Queues$/;"	c
+Mutex	src/chapter_4-02.md	/^# Mutex$/;"	c
 N	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	C
 N	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	v
 Notable system threads	book/chapter_2.html	/^<h2 id="notable-system-threads"><a class="header" href="#notable-system-threads">Notable system /;"	i
 Notable system threads	book/print.html	/^<h2 id="notable-system-threads"><a class="header" href="#notable-system-threads">Notable system /;"	i
 Notable system threads	src/chapter_2.md	/^## Notable system threads$/;"	s	chapter:The Kernel API - Threads
+Notable thread option	src/chapter_2.md	/^### Notable thread option$/;"	S	section:The Kernel API - Threads""Thread Priorities
 O	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	v
 PWM	book/chapter_3-05.html	/^                        <h1 id="pwm"><a class="header" href="#pwm">PWM<\/a><\/h1>$/;"	h
 PWM	book/print.html	/^<div style="break-before: page; page-break-before: always;"><\/div><h1 id="pwm"><a class="header/;"	h
@@ -3297,16 +3307,23 @@ Prerequisites	book/introduction.html	/^<h2 id="prerequisites"><a class="header" 
 Prerequisites	book/print.html	/^<h2 id="prerequisites"><a class="header" href="#prerequisites">Prerequisites<\/a><\/h2>$/;"	i
 Prerequisites	src/introduction.md	/^## Prerequisites$/;"	s	chapter:Introduction
 R	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	C
+RTOS	src/chapter_2.md	/^## RTOS$/;"	s	chapter:The Kernel API - Threads
+Real-Time System	src/chapter_2.md	/^## Real-Time System$/;"	s	chapter:The Kernel API - Threads
 S	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	f
 S	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	v
 SEARCH_HOTKEY_KEYCODE	book/searcher.js	/^        SEARCH_HOTKEY_KEYCODE = 83,$/;"	v
 SELECT_KEYCODE	book/searcher.js	/^        SELECT_KEYCODE = 13;$/;"	v
+Semaphores	src/chapter_4-01.md	/^# Semaphores$/;"	c
+Simple thread example	src/chapter_2.md	/^## Simple thread example$/;"	s	chapter:The Kernel API - Threads
 SortedSet	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	c	class:lunr
 Source Code	book/introduction.html	/^<h2 id="source-code"><a class="header" href="#source-code">Source Code<\/a><\/h2>$/;"	i
 Source Code	book/print.html	/^<h2 id="source-code"><a class="header" href="#source-code">Source Code<\/a><\/h2>$/;"	i
 Source Code	src/introduction.md	/^## Source Code$/;"	s	chapter:Introduction
+Step 1: Breather LED	src/chapter_3-05.md	/^## Step 1: Breather LED$/;"	s	chapter:PWM
+Step 2: Breather LED with DMA & Interrupts (Idle CPU)	src/chapter_3-05.md	/^## Step 2: Breather LED with DMA & Interrupts (Idle CPU)$/;"	s	chapter:PWM
 String	book/searcher.js	/^        String.prototype.startsWith = function(search, pos) {$/;"	c
 T	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	f
+Test-and-Set Operations	src/chapter_4-01.md	/^### Test-and-Set Operations$/;"	S	chapter:Semaphores
 The Kernel API - Threads	book/chapter_2.html	/^                        <h1 id="the-kernel-api---threads"><a class="header" href="#the-kernel-ap/;"	h
 The Kernel API - Threads	book/print.html	/^<div style="break-before: page; page-break-before: always;"><\/div><h1 id="the-kernel-api---thre/;"	h
 The Kernel API - Threads	src/chapter_2.md	/^# The Kernel API - Threads$/;"	c
@@ -3330,6 +3347,7 @@ Timers	src/chapter_3-04.md	/^# Timers$/;"	c
 UP_KEYCODE	book/searcher.js	/^        UP_KEYCODE = 38,$/;"	v
 URL_MARK_PARAM	book/searcher.js	/^        URL_MARK_PARAM = 'highlight',$/;"	v
 URL_SEARCH_PARAM	book/searcher.js	/^        URL_SEARCH_PARAM = 'search',$/;"	v
+Using Semaphores	src/chapter_4-01.md	/^## Using Semaphores$/;"	s	chapter:Semaphores
 \\"	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.body.root.p.r.i.n.t.k.(
 \\"	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.breadcrumbs.root.p.r.i.n.t.k.(
 \\\\	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.body.root.d
@@ -4010,9 +4028,11 @@ begin	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.
 beginKeywords	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5025800.AnonymousFunctiondaebc5025900.i
 beginKeywords	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5025800.AnonymousFunctiondaebc5025900.l
 beginKeywords	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5027400.l
+bg-id2	src/images/race-condition.svg	/^   class="Background" \/>$/;"	i
 biliti	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	p	class:t.stemmer.e
 bli	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	p	class:t.stemmer.e
 blockquote	book/css/general.css	/^blockquote {$/;"	s
+bo-id2	src/images/race-condition.svg	/^   class="BackgroundObjects" \/>$/;"	i
 body	book/css/general.css	/^body {$/;"	s
 body	book/searcher.js	/^                body: {boost: 1},$/;"	c	class:search_options.fields
 body	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	n	object:index.documentStore.docInfo.0
@@ -4141,6 +4161,26 @@ built_in	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Obje
 built_in	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5026d00.AnonymousFunctiondaebc5026f00.o
 built_in	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5027000.AnonymousFunctiondaebc5027100.t
 builtin-name	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5023b00.AnonymousFunctiondaebc5023d00.a
+bullet-char-template-10004	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	d
+bullet-char-template-10004	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	i
+bullet-char-template-10007	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	d
+bullet-char-template-10007	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	i
+bullet-char-template-10132	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	d
+bullet-char-template-10132	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	i
+bullet-char-template-10146	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	d
+bullet-char-template-10146	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	i
+bullet-char-template-57354	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	d
+bullet-char-template-57354	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	i
+bullet-char-template-57356	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	d
+bullet-char-template-57356	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	i
+bullet-char-template-61548	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	d
+bullet-char-template-61548	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	i
+bullet-char-template-8211	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	d
+bullet-char-template-8211	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	i
+bullet-char-template-8226	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	d
+bullet-char-template-8226	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	i
+bullet-char-template-9679	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	d
+bullet-char-template-9679	src/images/race-condition.svg	/^   transform="matrix(4.8828125e-4,0,0,-4.8828125e-4,0,0)">$/;"	i
 but	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	p	class:t.defaultStopWords
 by	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	p	class:t.defaultStopWords
 c	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	c	class:AnonymousFunctiondaebc5021d00.AnonymousFunctiondaebc5021e00
@@ -4368,6 +4408,7 @@ c	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","intro
 c	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.title.root.s.t.r.u
 can	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	p	class:t.defaultStopWords
 cannot	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	p	class:t.defaultStopWords
+cc	src/images/race-condition.svg	/^   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"><metadata$/;"	n	uri:http://creativecommons.org/ns#
 children	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:hljs.c.constructor.rootNode
 children	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:hljs.c.openNode.n
 className	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	f	function:e
@@ -4497,6 +4538,7 @@ constructor	book/highlight.js	/^var hljs=function(){"use strict";function e(n){O
 constructor	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	m	class:hljs.l
 constructor	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	m	class:hljs.n
 constructor	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	m	class:hljs.u
+container-id1	src/images/race-condition.svg	/^   id="container-id1">$/;"	i
 contains	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5020800.h
 contains	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5021900.AnonymousFunctiondaebc5021a00.a
 contains	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5021b00.AnonymousFunctiondaebc5021c00.a
@@ -4775,9 +4817,14 @@ d	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","intro
 d	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.title.root.i
 d	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.title.root.i.n.t.r.o
 d	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.title.root.t.h.r.e.a
+dc	src/images/race-condition.svg	/^   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"><metadata$/;"	n	uri:http://purl.org/dc/elements/1.1/
 dear	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	p	class:t.defaultStopWords
 debugMode	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	f	function:t
 defaultStopWords	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	c	class:t
+defs45	src/images/race-condition.svg	/^   id="defs45">$/;"	i
+defs49	src/images/race-condition.svg	/^   id="defs49">$/;"	i
+defs8	src/images/race-condition.svg	/^   id="defs8">$/;"	i
+defs81	src/images/race-condition.svg	/^   id="defs81">$/;"	i
 delays	book/chapter_2.html	/^<h2 id="delays"><a class="header" href="#delays">Delays<\/a><\/h2>$/;"	I
 delays	book/print.html	/^<h2 id="delays"><a class="header" href="#delays">Delays<\/a><\/h2>$/;"	I
 device-tree-101	book/chapter_3-01.html	/^                        <h1 id="device-tree-101"><a class="header" href="#device-tree-101">Devic/;"	I
@@ -14119,6 +14166,7 @@ endsWithParent	book/highlight.js	/^var hljs=function(){"use strict";function e(n
 endsWithParent	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5027400.l
 entli	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	p	class:t.stemmer.e
 escapeHTML	book/searcher.js	/^    var escapeHTML = (function() {$/;"	f
+ev	src/images/nrf52833_timer-block.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" xmlns/;"	n	uri:http://www.w3.org/2001/xml-events
 ever	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	p	class:t.defaultStopWords
 every	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	p	class:t.defaultStopWords
 example---add-an-external-button	book/chapter_3-02.html	/^<h3 id="example---add-an-external-button"><a class="header" href="#example---add-an-external-but/;"	I
@@ -14221,6 +14269,7 @@ finalize	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Obje
 firstContact	book/book.js	/^        firstContact = {$/;"	c	class:AnonymousFunction3c7956d51a00
 firstContact	book/book.js	/^    var firstContact = null;$/;"	v
 fn	book/clipboard.min.js	/^!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==/;"	f	function:n
+font-face10	src/images/race-condition.svg	/^   id="font-face10" \/>$/;"	i
 for	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	p	class:t.defaultStopWords
 forEach	book/clipboard.min.js	/^!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==/;"	m	class:Array
 forEach	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	m	class:lunr.SortedSet
@@ -14320,6 +14369,20 @@ g	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","intro
 g	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.breadcrumbs.root.u.n
 g	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.title.root
 g	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.title.root.c.o.n.f.i
+g112	src/images/race-condition.svg	/^   id="g112">$/;"	i
+g127	src/images/race-condition.svg	/^   id="g127">$/;"	i
+g142	src/images/race-condition.svg	/^   id="g142">$/;"	i
+g161	src/images/race-condition.svg	/^   id="g161">$/;"	i
+g180	src/images/race-condition.svg	/^   id="g180">$/;"	i
+g189	src/images/race-condition.svg	/^   id="g189">$/;"	i
+g202	src/images/race-condition.svg	/^   id="g202">$/;"	i
+g204	src/images/race-condition.svg	/^   id="g204">$/;"	i
+g208	src/images/race-condition.svg	/^   id="g208">$/;"	i
+g210	src/images/race-condition.svg	/^   transform="translate(-1250,-1750)">$/;"	i
+g47	src/images/race-condition.svg	/^   id="g47" \/>$/;"	d
+g47	src/images/race-condition.svg	/^   id="g47" \/>$/;"	i
+g86	src/images/race-condition.svg	/^   transform="translate(-1250,-1750)">$/;"	i
+g99	src/images/race-condition.svg	/^   id="g99">$/;"	i
 getDoc	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	m	class:t.DocumentStore
 getDocFreq	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	m	class:t.InvertedIndex
 getDocs	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	m	class:t.InvertedIndex
@@ -14332,6 +14395,21 @@ getSeperator	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"o
 getTermFrequency	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	m	class:t.InvertedIndex
 get_theme	book/book.js	/^    function get_theme() {$/;"	f
 globalKeyHandler	book/searcher.js	/^    function globalKeyHandler(e) {$/;"	f
+glyph14	src/images/race-condition.svg	/^   id="glyph14" \/>$/;"	i
+glyph16	src/images/race-condition.svg	/^   id="glyph16" \/>$/;"	i
+glyph18	src/images/race-condition.svg	/^   id="glyph18" \/>$/;"	i
+glyph20	src/images/race-condition.svg	/^   id="glyph20" \/>$/;"	i
+glyph22	src/images/race-condition.svg	/^   id="glyph22" \/>$/;"	i
+glyph24	src/images/race-condition.svg	/^   id="glyph24" \/>$/;"	i
+glyph26	src/images/race-condition.svg	/^   id="glyph26" \/>$/;"	i
+glyph28	src/images/race-condition.svg	/^   id="glyph28" \/>$/;"	i
+glyph30	src/images/race-condition.svg	/^   id="glyph30" \/>$/;"	i
+glyph32	src/images/race-condition.svg	/^   id="glyph32" \/>$/;"	i
+glyph34	src/images/race-condition.svg	/^   id="glyph34" \/>$/;"	i
+glyph36	src/images/race-condition.svg	/^   id="glyph36" \/>$/;"	i
+glyph38	src/images/race-condition.svg	/^   id="glyph38" \/>$/;"	i
+glyph40	src/images/race-condition.svg	/^   id="glyph40" \/>$/;"	i
+glyph42	src/images/race-condition.svg	/^   id="glyph42" \/>$/;"	i
 gpio	book/chapter_3-02.html	/^                        <h1 id="gpio"><a class="header" href="#gpio">GPIO<\/a><\/h1>$/;"	I
 gpio	book/print.html	/^<div style="break-before: page; page-break-before: always;"><\/div><h1 id="gpio"><a class="heade/;"	I
 gpio-config	book/chapter_3-02.html	/^<h2 id="gpio-config"><a class="header" href="#gpio-config">GPIO Config<\/a><\/h2>$/;"	I
@@ -14875,6 +14953,16 @@ id	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","intr
 id	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	s	object:index.documentStore.docs.7
 id	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	s	object:index.documentStore.docs.8
 id	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	s	object:index.documentStore.docs.9
+id1	src/images/race-condition.svg	/^   clip-path="url(#presentation_clip_path)">$/;"	i
+id10	src/images/race-condition.svg	/^   id="id10">$/;"	i
+id2	src/images/race-condition.svg	/^   class="Master_Slide">$/;"	i
+id3	src/images/race-condition.svg	/^   id="id3">$/;"	i
+id4	src/images/race-condition.svg	/^   id="id4">$/;"	i
+id5	src/images/race-condition.svg	/^   id="id5">$/;"	i
+id6	src/images/race-condition.svg	/^   id="id6">$/;"	i
+id7	src/images/race-condition.svg	/^   id="id7">$/;"	i
+id8	src/images/race-condition.svg	/^   id="id8">$/;"	i
+id9	src/images/race-condition.svg	/^   id="id9">$/;"	i
 idf	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	m	class:t.Index
 idle thread	book/chapter_2.html	/^<h3 id="idle-thread"><a class="header" href="#idle-thread">idle thread<\/a><\/h3>$/;"	j
 idle thread	book/print.html	/^<h3 id="idle-thread"><a class="header" href="#idle-thread">idle thread<\/a><\/h3>$/;"	j
@@ -14905,6 +14993,7 @@ init	book/searcher.js	/^    function init(config) {$/;"	f
 init-structure	book/chapter_3-02.html	/^<h2 id="init-structure"><a class="header" href="#init-structure">Init Structure<\/a><\/h2>$/;"	I
 init-structure	book/print.html	/^<h2 id="init-structure"><a class="header" href="#init-structure">Init Structure<\/a><\/h2>$/;"	I
 initResize	book/book.js	/^    function initResize(e) {$/;"	f
+inkscape	src/images/race-condition.svg	/^   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"><metadata$/;"	n	uri:http://www.inkscape.org/namespaces/inkscape
 installation	book/chapter_1.html	/^                        <h1 id="installation"><a class="header" href="#installation">Installatio/;"	I
 installation	book/print.html	/^<div style="break-before: page; page-break-before: always;"><\/div><h1 id="installation"><a clas/;"	I
 interrupts	book/chapter_3-03.html	/^                        <h1 id="interrupts"><a class="header" href="#interrupts">Interrupts<\/a>/;"	I
@@ -15250,6 +15339,14 @@ language	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Obje
 language	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:e.result
 languageDetectRe	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5020800.f
 languages	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5020800.f
+lend1	src/images/nrf52833_timer-block.svg	/^		<g id="lend1">$/;"	d
+lend1	src/images/nrf52833_timer-block.svg	/^		<g id="lend1">$/;"	i
+lend10	src/images/nrf52833_timer-block.svg	/^		<g id="lend10">$/;"	d
+lend10	src/images/nrf52833_timer-block.svg	/^		<g id="lend10">$/;"	i
+lend13	src/images/nrf52833_timer-block.svg	/^		<g id="lend13">$/;"	d
+lend13	src/images/nrf52833_timer-block.svg	/^		<g id="lend13">$/;"	i
+lend21	src/images/nrf52833_timer-block.svg	/^		<g id="lend21">$/;"	d
+lend21	src/images/nrf52833_timer-block.svg	/^		<g id="lend21">$/;"	i
 length	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	n	object:index.documentStore
 lexemes	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5023b00.AnonymousFunctiondaebc5023d00.l
 light	book/404.html	/^                            <li role="none"><button role="menuitem" class="theme" id="light">Lig/;"	I
@@ -15452,7 +15549,21 @@ menu-bar-hover-placeholder	book/title-page.html	/^                <div id="menu-
 menuTitle	book/book.js	/^    var menuTitle = document.querySelector('.menu-title');$/;"	v
 mergeScores	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	m	class:t.Index
 meta-keyword	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5022b00.AnonymousFunctiondaebc5022c00.s.keywords
+metadata216	src/images/race-condition.svg	/^   id="metadata216"><rdf:RDF><cc:Work$/;"	i
 minMenuY	book/book.js	/^        var minMenuY = -menu.clientHeight - 50;$/;"	v
+missing-glyph12	src/images/race-condition.svg	/^   id="missing-glyph12" \/>$/;"	i
+mrkr1-41	src/images/nrf52833_timer-block.svg	/^		<marker id="mrkr1-41" class="st3" v:arrowType="1" v:arrowSize="2" orient="auto" markerUnits="s/;"	d
+mrkr1-41	src/images/nrf52833_timer-block.svg	/^		<marker id="mrkr1-41" class="st3" v:arrowType="1" v:arrowSize="2" orient="auto" markerUnits="s/;"	i
+mrkr1-43	src/images/nrf52833_timer-block.svg	/^		<marker id="mrkr1-43" class="st3" v:arrowType="1" v:arrowSize="2" orient="auto" markerUnits="s/;"	d
+mrkr1-43	src/images/nrf52833_timer-block.svg	/^		<marker id="mrkr1-43" class="st3" v:arrowType="1" v:arrowSize="2" orient="auto" markerUnits="s/;"	i
+mrkr10-56	src/images/nrf52833_timer-block.svg	/^		<marker id="mrkr10-56" class="st3" v:arrowType="10" v:arrowSize="2" v:setback="7.125" refX="7./;"	d
+mrkr10-56	src/images/nrf52833_timer-block.svg	/^		<marker id="mrkr10-56" class="st3" v:arrowType="10" v:arrowSize="2" v:setback="7.125" refX="7./;"	i
+mrkr13-32	src/images/nrf52833_timer-block.svg	/^		<marker id="mrkr13-32" class="st3" v:arrowType="13" v:arrowSize="2" v:setback="33" refX="33" o/;"	d
+mrkr13-32	src/images/nrf52833_timer-block.svg	/^		<marker id="mrkr13-32" class="st3" v:arrowType="13" v:arrowSize="2" v:setback="33" refX="33" o/;"	i
+mrkr13-8	src/images/nrf52833_timer-block.svg	/^		<marker id="mrkr13-8" class="st3" v:arrowType="13" v:arrowSize="2" v:setback="34.5" refX="-34./;"	d
+mrkr13-8	src/images/nrf52833_timer-block.svg	/^		<marker id="mrkr13-8" class="st3" v:arrowType="13" v:arrowSize="2" v:setback="34.5" refX="-34./;"	i
+mrkr21-62	src/images/nrf52833_timer-block.svg	/^		<marker id="mrkr21-62" class="st3" v:arrowType="21" v:arrowSize="2" v:setback="8.625" refX="-8/;"	d
+mrkr21-62	src/images/nrf52833_timer-block.svg	/^		<marker id="mrkr21-62" class="st3" v:arrowType="21" v:arrowSize="2" v:setback="8.625" refX="-8/;"	i
 n	book/clipboard.min.js	/^!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==/;"	c
 n	book/clipboard.min.js	/^!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==/;"	f	function:AnonymousFunctiond161b86c0600.o
 n	book/clipboard.min.js	/^!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==/;"	f	function:AnonymousFunctiond161b86c2300
@@ -15717,6 +15828,7 @@ n	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","intro
 n	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.title.root.m.a.i
 n	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.title.root.t.e.r.m.i
 name	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5020800.h
+namedview214	src/images/race-condition.svg	/^   inkscape:current-layer="svg212" \/>$/;"	i
 navy	book/404.html	/^                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy/;"	I
 navy	book/chapter_1.html	/^                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy/;"	I
 navy	book/chapter_2.html	/^                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy/;"	I
@@ -15737,6 +15849,64 @@ nodeList	book/clipboard.min.js	/^!function(t,e){"object"==typeof exports&&"objec
 notable-system-threads	book/chapter_2.html	/^<h2 id="notable-system-threads"><a class="header" href="#notable-system-threads">Notable system /;"	I
 notable-system-threads	book/print.html	/^<h2 id="notable-system-threads"><a class="header" href="#notable-system-threads">Notable system /;"	I
 ns233e22a30101	book/favicon.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" viewBox="0 0 199.7 184.2">$/;"	n	uri:http://www.w3.org/2000/svg
+ns63b9c0490101	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/2000/svg
+ns63b9c0490201	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0490301	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0490401	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0490501	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0490601	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0490701	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0490801	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0490901	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0490a01	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0490b01	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0490c01	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0490d01	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0490e01	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0490f01	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0491001	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0491101	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0491201	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0491301	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0491401	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0491501	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0491601	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0491701	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0491801	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0491901	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0491a01	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns63b9c0491b01	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+ns6a8b644e0101	src/images/race-condition.svg	/^   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"><metadata$/;"	n	uri:http://www.w3.org/2000/svg
+nsbcb741ca0101	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/2000/svg
+nsbcb741ca0201	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca0301	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca0401	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca0501	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca0601	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca0701	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca0801	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca0901	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca0a01	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca0b01	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca0c01	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca0d01	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca0e01	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca0f01	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca1001	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca1101	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca1201	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca1301	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca1401	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca1501	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca1601	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca1701	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca1801	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca1901	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca1a01	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca1b01	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca1c01	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsbcb741ca1d01	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xhtml
+nsf330a1820101	src/images/nrf52833_timer-block.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" xmlns/;"	n	uri:http://www.w3.org/2000/svg
 o	book/clipboard.min.js	/^!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==/;"	f
 o	book/clipboard.min.js	/^!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==/;"	f	function:AnonymousFunctiond161b86c0400.i
 o	book/clipboard.min.js	/^!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==/;"	f	function:AnonymousFunctiond161b86c0600
@@ -15991,6 +16161,7 @@ on	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=ty
 once	book/clipboard.min.js	/^!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==/;"	m	class:n
 onpopstate	book/searcher.js	/^        window.onpopstate = function(e) { doSearchOrMarkFromUrl(); };$/;"	f	function:window
 onunload	book/book.js	/^window.onunload = function () { };$/;"	f	function:window
+ooo	src/images/race-condition.svg	/^   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"><metadata$/;"	n	uri:http://xml.openoffice.org/svg/export
 openNode	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	m	class:hljs.c
 openNode	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	m	class:hljs.l
 optimize	book/book.js	/^            optimize: "0",$/;"	p	class:run_rust_code.params
@@ -16175,6 +16346,22 @@ page-wrapper	book/print.html	/^        <div id="page-wrapper" class="page-wrappe
 page-wrapper	book/title-page.html	/^        <div id="page-wrapper" class="page-wrapper">$/;"	I
 params	book/book.js	/^        var params = {$/;"	c	class:run_rust_code
 parseURL	book/searcher.js	/^    function parseURL(url) {$/;"	f
+path116	src/images/race-condition.svg	/^   id="path116" \/>$/;"	i
+path131	src/images/race-condition.svg	/^   id="path131" \/>$/;"	i
+path146	src/images/race-condition.svg	/^   id="path146" \/>$/;"	i
+path165	src/images/race-condition.svg	/^   id="path165" \/>$/;"	i
+path184	src/images/race-condition.svg	/^   id="path184" \/>$/;"	i
+path186	src/images/race-condition.svg	/^   id="path186" \/>$/;"	i
+path51	src/images/race-condition.svg	/^   id="path51" \/>$/;"	i
+path54	src/images/race-condition.svg	/^   id="path54" \/>$/;"	i
+path57	src/images/race-condition.svg	/^   id="path57" \/>$/;"	i
+path60	src/images/race-condition.svg	/^   id="path60" \/>$/;"	i
+path63	src/images/race-condition.svg	/^   id="path63" \/>$/;"	i
+path66	src/images/race-condition.svg	/^   id="path66" \/>$/;"	i
+path69	src/images/race-condition.svg	/^   id="path69" \/>$/;"	i
+path72	src/images/race-condition.svg	/^   id="path72" \/>$/;"	i
+path75	src/images/race-condition.svg	/^   id="path75" \/>$/;"	i
+path78	src/images/race-condition.svg	/^   id="path78" \/>$/;"	i
 pipeline	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	a	object:index
 playground_text	book/book.js	/^function playground_text(playground) {$/;"	f
 playgrounds	book/book.js	/^    var playgrounds = Array.from(document.querySelectorAll(".playground"));$/;"	v
@@ -16188,6 +16375,10 @@ pre > .buttons i	book/css/chrome.css	/^pre > .buttons i {$/;"	s
 pre > .result	book/css/chrome.css	/^pre > .result {$/;"	c
 prerequisites	book/introduction.html	/^<h2 id="prerequisites"><a class="header" href="#prerequisites">Prerequisites<\/a><\/h2>$/;"	I
 prerequisites	book/print.html	/^<h2 id="prerequisites"><a class="header" href="#prerequisites">Prerequisites<\/a><\/h2>$/;"	I
+presentation_clip_path	src/images/race-condition.svg	/^   clipPathUnits="userSpaceOnUse">$/;"	d
+presentation_clip_path	src/images/race-condition.svg	/^   clipPathUnits="userSpaceOnUse">$/;"	i
+presentation_clip_path_shrink	src/images/race-condition.svg	/^   clipPathUnits="userSpaceOnUse">$/;"	d
+presentation_clip_path_shrink	src/images/race-condition.svg	/^   clipPathUnits="userSpaceOnUse">$/;"	i
 prevScrollTop	book/book.js	/^        var prevScrollTop = scrollTop;$/;"	v
 print-button	book/404.html	/^                            <i id="print-button" class="fa fa-print"><\/i>$/;"	I
 print-button	book/chapter_1.html	/^                            <i id="print-button" class="fa fa-print"><\/i>$/;"	I
@@ -16530,7 +16721,18 @@ r	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","intro
 r	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.title.root.t.h
 r	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.title.root.t.i.m.e
 r	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.title.root.z.e.p.h.y
+rdf	src/images/race-condition.svg	/^   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"><metadata$/;"	n	uri:http://www.w3.org/1999/02/22-rdf-syntax-ns#
 re	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:e.result
+rect101	src/images/race-condition.svg	/^   id="rect101" \/>$/;"	i
+rect114	src/images/race-condition.svg	/^   id="rect114" \/>$/;"	i
+rect129	src/images/race-condition.svg	/^   id="rect129" \/>$/;"	i
+rect144	src/images/race-condition.svg	/^   id="rect144" \/>$/;"	i
+rect163	src/images/race-condition.svg	/^   id="rect163" \/>$/;"	i
+rect182	src/images/race-condition.svg	/^   id="rect182" \/>$/;"	i
+rect191	src/images/race-condition.svg	/^   id="rect191" \/>$/;"	i
+rect2	src/images/race-condition.svg	/^   id="rect2" \/>$/;"	i
+rect5	src/images/race-condition.svg	/^   id="rect5" \/>$/;"	i
+rect88	src/images/race-condition.svg	/^   id="rect88" \/>$/;"	i
 ref	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	p	class:t.Index.search.v
 ref	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	s	object:index
 registerFunction	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	f	function:t.Pipeline
@@ -16966,6 +17168,32 @@ setRef	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"
 setSearchUrlParameters	book/searcher.js	/^    function setSearchUrlParameters(searchterm, action) {$/;"	f
 setSeperator	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	f	function:t.tokenizer
 set_theme	book/book.js	/^    function set_theme(theme, store = true) {$/;"	f
+shape1-27	src/images/nrf52833_timer-block.svg	/^		<g id="shape1-27" v:mID="1" v:groupContext="shape" v:layerMember="0" transform="translate(314./;"	i
+shape10-81	src/images/nrf52833_timer-block.svg	/^		<g id="shape10-81" v:mID="10" v:groupContext="shape" transform="translate(90.7087,-102.047)">$/;"	i
+shape1035-3	src/images/nrf52833_timer-block.svg	/^		<g id="shape1035-3" v:mID="1035" v:groupContext="shape" v:layerMember="0" transform="translate/;"	i
+shape1042-11	src/images/nrf52833_timer-block.svg	/^		<g id="shape1042-11" v:mID="1042" v:groupContext="shape" transform="translate(90.7087,-141.732/;"	i
+shape1043-14	src/images/nrf52833_timer-block.svg	/^		<g id="shape1043-14" v:mID="1043" v:groupContext="shape" transform="translate(232.441,-124.724/;"	i
+shape11-84	src/images/nrf52833_timer-block.svg	/^		<g id="shape11-84" v:mID="11" v:groupContext="shape" v:layerMember="0" transform="translate(11/;"	i
+shape12-89	src/images/nrf52833_timer-block.svg	/^		<g id="shape12-89" v:mID="12" v:groupContext="shape" v:layerMember="0" transform="translate(20/;"	i
+shape1453-17	src/images/nrf52833_timer-block.svg	/^		<g id="shape1453-17" v:mID="1453" v:groupContext="shape" transform="translate(292.544,-136.063/;"	i
+shape1547-20	src/images/nrf52833_timer-block.svg	/^		<g id="shape1547-20" v:mID="1547" v:groupContext="shape" v:layerMember="0" transform="translat/;"	i
+shape1548-92	src/images/nrf52833_timer-block.svg	/^		<g id="shape1548-92" v:mID="1548" v:groupContext="shape" v:layerMember="0" transform="translat/;"	i
+shape1549-99	src/images/nrf52833_timer-block.svg	/^		<g id="shape1549-99" v:mID="1549" v:groupContext="shape" transform="translate(292.544,-158.74)/;"	i
+shape1550-102	src/images/nrf52833_timer-block.svg	/^		<g id="shape1550-102" v:mID="1550" v:groupContext="shape" v:layerMember="0" transform="transla/;"	i
+shape1551-111	src/images/nrf52833_timer-block.svg	/^		<g id="shape1551-111" v:mID="1551" v:groupContext="shape" v:layerMember="0" transform="transla/;"	i
+shape1552-114	src/images/nrf52833_timer-block.svg	/^		<g id="shape1552-114" v:mID="1552" v:groupContext="shape" v:layerMember="0" transform="transla/;"	i
+shape1553-117	src/images/nrf52833_timer-block.svg	/^		<g id="shape1553-117" v:mID="1553" v:groupContext="shape" v:layerMember="0" transform="transla/;"	i
+shape1556-124	src/images/nrf52833_timer-block.svg	/^		<g id="shape1556-124" v:mID="1556" v:groupContext="shape" v:layerMember="0" transform="transla/;"	i
+shape1564-131	src/images/nrf52833_timer-block.svg	/^		<g id="shape1564-131" v:mID="1564" v:groupContext="shape" v:layerMember="0" transform="transla/;"	i
+shape1565-138	src/images/nrf52833_timer-block.svg	/^		<g id="shape1565-138" v:mID="1565" v:groupContext="shape" transform="translate(73.7008,-226.77/;"	i
+shape2-35	src/images/nrf52833_timer-block.svg	/^		<g id="shape2-35" v:mID="2" v:groupContext="shape" v:layerMember="0" transform="translate(318./;"	i
+shape3-1	src/images/nrf52833_timer-block.svg	/^		<g id="shape3-1" v:mID="3" v:groupContext="shape" transform="translate(73.7008,-85.0394)">$/;"	i
+shape4-44	src/images/nrf52833_timer-block.svg	/^		<g id="shape4-44" v:mID="4" v:groupContext="shape" v:layerMember="0" transform="translate(183./;"	i
+shape5-51	src/images/nrf52833_timer-block.svg	/^		<g id="shape5-51" v:mID="5" v:groupContext="shape" v:layerMember="0" transform="translate(207./;"	i
+shape6-57	src/images/nrf52833_timer-block.svg	/^		<g id="shape6-57" v:mID="6" v:groupContext="shape" v:layerMember="0" transform="translate(147./;"	i
+shape7-66	src/images/nrf52833_timer-block.svg	/^		<g id="shape7-66" v:mID="7" v:groupContext="shape" v:layerMember="0" transform="translate(204./;"	i
+shape8-73	src/images/nrf52833_timer-block.svg	/^		<g id="shape8-73" v:mID="8" v:groupContext="shape" v:layerMember="0" transform="translate(183./;"	i
+shape9-78	src/images/nrf52833_timer-block.svg	/^		<g id="shape9-78" v:mID="9" v:groupContext="shape" transform="translate(170.179,-102.047)">$/;"	i
 showResults	book/searcher.js	/^    function showResults(yes) {$/;"	f
 showSearch	book/searcher.js	/^    function showSearch(yes) {$/;"	f
 showSidebar	book/book.js	/^    function showSidebar() {$/;"	f
@@ -17016,6 +17244,7 @@ sidebarLinks	book/book.js	/^    var sidebarLinks = document.querySelectorAll('#s
 sidebarResizeHandle	book/book.js	/^    var sidebarResizeHandle = document.getElementById("sidebar-resize-handle");$/;"	v
 sidebarToggle	book/book.js	/^    sidebarToggleButton.addEventListener('click', function sidebarToggle() {$/;"	f
 sidebarToggleButton	book/book.js	/^    var sidebarToggleButton = document.getElementById("sidebar-toggle");$/;"	v
+sodipodi	src/images/race-condition.svg	/^   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"><metadata$/;"	n	uri:http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd
 source-code	book/introduction.html	/^<h2 id="source-code"><a class="header" href="#source-code">Source Code<\/a><\/h2>$/;"	I
 source-code	book/print.html	/^<h2 id="source-code"><a class="header" href="#source-code">Source Code<\/a><\/h2>$/;"	I
 span	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	m	class:hljs.l
@@ -17040,6 +17269,8 @@ subLanguage	book/highlight.js	/^var hljs=function(){"use strict";function e(n){O
 subLanguage	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5026d00.AnonymousFunctiondaebc5026f00.g.starts
 subLanguage	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5027000.AnonymousFunctiondaebc5027100.c.starts
 subLanguage	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5027000.AnonymousFunctiondaebc5027100.l.starts
+svg	src/images/race-condition.svg	/^   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"><metadata$/;"	n	uri:http://www.w3.org/2000/svg
+svg212	src/images/race-condition.svg	/^   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"><metadata$/;"	i
 t	book/clipboard.min.js	/^!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==/;"	c
 t	book/clipboard.min.js	/^!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==/;"	f	function:r
 t	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	c	class:t.stemmer
@@ -17531,6 +17762,13 @@ table thead tr	book/css/general.css	/^table thead tr {$/;"	s
 teaser_count	book/searcher.js	/^        teaser_count = 0,$/;"	v
 teaser_word_count	book/searcher.js	/^            teaser_word_count: 30,$/;"	p	class:results_options
 teaser_word_count	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	n	object:results_options
+text109	src/images/race-condition.svg	/^   id="text109"><tspan$/;"	i
+text124	src/images/race-condition.svg	/^   id="text124"><tspan$/;"	i
+text139	src/images/race-condition.svg	/^   id="text139"><tspan$/;"	i
+text158	src/images/race-condition.svg	/^   id="text158"><tspan$/;"	i
+text177	src/images/race-condition.svg	/^   id="text177"><tspan$/;"	i
+text199	src/images/race-condition.svg	/^   id="text199"><tspan$/;"	i
+text96	src/images/race-condition.svg	/^   id="text96"><tspan$/;"	i
 tf	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	p	class:n.docs.docs
 tf	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	n	object:index.index.body.root.0.docs.10
 tf	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	n	object:index.index.body.root.0.docs.15
@@ -19178,6 +19416,31 @@ top	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.fr
 top	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:v.t.n
 topCache	book/book.js	/^        var topCache = menu.style.top.slice(0, -2);$/;"	v
 trimmer	book/elasticlunr.min.js	/^!function(){function e(e){if(null===e||"object"!=typeof e)return e;var t=e.constructor();for(var/;"	f	function:t
+tspan103	src/images/race-condition.svg	/^         id="tspan103">Thread B<\/tspan><\/tspan><\/tspan><\/text>$/;"	i
+tspan105	src/images/race-condition.svg	/^       id="tspan105"><tspan$/;"	i
+tspan107	src/images/race-condition.svg	/^     style="text-decoration: underline;text-decoration-line: underline"><tspan$/;"	i
+tspan118	src/images/race-condition.svg	/^         id="tspan118">read<\/tspan><\/tspan><\/tspan><\/text>$/;"	i
+tspan120	src/images/race-condition.svg	/^       id="tspan120"><tspan$/;"	i
+tspan122	src/images/race-condition.svg	/^     id="tspan122"><tspan$/;"	i
+tspan133	src/images/race-condition.svg	/^         id="tspan133">read<\/tspan><\/tspan><\/tspan><\/text>$/;"	i
+tspan135	src/images/race-condition.svg	/^       id="tspan135"><tspan$/;"	i
+tspan137	src/images/race-condition.svg	/^     id="tspan137"><tspan$/;"	i
+tspan148	src/images/race-condition.svg	/^         id="tspan148">write<\/tspan><\/tspan><tspan$/;"	i
+tspan150	src/images/race-condition.svg	/^       id="tspan150"><tspan$/;"	i
+tspan152	src/images/race-condition.svg	/^         id="tspan152">2<\/tspan><\/tspan><\/tspan><\/text>$/;"	i
+tspan154	src/images/race-condition.svg	/^       id="tspan154"><tspan$/;"	i
+tspan156	src/images/race-condition.svg	/^     id="tspan156"><tspan$/;"	i
+tspan167	src/images/race-condition.svg	/^         id="tspan167">write<\/tspan><\/tspan><tspan$/;"	i
+tspan169	src/images/race-condition.svg	/^       id="tspan169"><tspan$/;"	i
+tspan171	src/images/race-condition.svg	/^         id="tspan171">1<\/tspan><\/tspan><\/tspan><\/text>$/;"	i
+tspan173	src/images/race-condition.svg	/^       id="tspan173"><tspan$/;"	i
+tspan175	src/images/race-condition.svg	/^     id="tspan175"><tspan$/;"	i
+tspan193	src/images/race-condition.svg	/^         id="tspan193">time<\/tspan><\/tspan><\/tspan><\/text>$/;"	i
+tspan195	src/images/race-condition.svg	/^       id="tspan195"><tspan$/;"	i
+tspan197	src/images/race-condition.svg	/^     id="tspan197"><tspan$/;"	i
+tspan90	src/images/race-condition.svg	/^         id="tspan90">Thread A<\/tspan><\/tspan><\/tspan><\/text>$/;"	i
+tspan92	src/images/race-condition.svg	/^       id="tspan92"><tspan$/;"	i
+tspan94	src/images/race-condition.svg	/^     style="text-decoration: underline;text-decoration-line: underline"><tspan$/;"	i
 u	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	c	class:AnonymousFunctiondaebc5022b00.AnonymousFunctiondaebc5022c00
 u	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	c	class:AnonymousFunctiondaebc5026d00.AnonymousFunctiondaebc5026f00
 u	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	c	class:AnonymousFunctiondaebc5027000.AnonymousFunctiondaebc5027100
@@ -19456,6 +19719,7 @@ v	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","intro
 v	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.breadcrumbs.root.s.t.m.3.2._.m.i.n._.d.e
 v	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.breadcrumbs.root.s.t.m.3.2._.m.i.n._.d.e.v._.b.l.u.e...o
 v	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.title.root.d.e
+v	src/images/nrf52833_timer-block.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" xmlns/;"	n	uri:http://schemas.microsoft.com/visio/2003/SVGExtensions/
 value	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	m	class:hljs.l
 value	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:v.t.n
 variants	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	p	class:AnonymousFunctiondaebc5021900.AnonymousFunctiondaebc5021a00.a
@@ -19549,6 +19813,9 @@ x	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","intro
 x	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.breadcrumbs.root.s.u.f.f.i
 x	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.breadcrumbs.root.t.e
 x	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.title.root.e
+xlink	src/images/nrf52833_timer-block.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" xmlns/;"	n	uri:http://www.w3.org/1999/xlink
+xlink	src/images/priorities.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xlink
+xlink	src/images/thread_states.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xlink
 y	book/highlight.js	/^var hljs=function(){"use strict";function e(n){Object.freeze(n);var t="function"==typeof n;retur/;"	C
 y	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.body.root
 y	book/searchindex.json	/^{"doc_urls":["title-page.html#the-zephyr-guide","introduction.html#introduction","introduction.h/;"	o	object:index.index.body.root.a.l.w.a
