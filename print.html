@@ -1,0 +1,657 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title></title>
+        <meta name="robots" content="noindex" />
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">The Zephyr Guide</a></li><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Setup</a></li><li class="chapter-item expanded "><a href="chapter_2.html"><strong aria-hidden="true">2.</strong> The Kernel API - Threads</a></li><li class="chapter-item expanded "><a href="chapter_3.html"><strong aria-hidden="true">3.</strong> Basic Peripherals API</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter_3-01.html"><strong aria-hidden="true">3.1.</strong> Device Tree 101</a></li><li class="chapter-item expanded "><a href="chapter_3-02.html"><strong aria-hidden="true">3.2.</strong> GPIO</a></li><li class="chapter-item expanded "><a href="chapter_3-03.html"><strong aria-hidden="true">3.3.</strong> Interrupts</a></li><li class="chapter-item expanded "><a href="chapter_3-04.html"><strong aria-hidden="true">3.4.</strong> Timers</a></li><li class="chapter-item expanded "><a href="chapter_3-05.html"><strong aria-hidden="true">3.5.</strong> PWM</a></li></ol></li><li class="chapter-item expanded "><a href="chapter_4.html"><strong aria-hidden="true">4.</strong> Kernel Facilities - Messaging</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter_4-01.html"><strong aria-hidden="true">4.1.</strong> Semaphores</a></li><li class="chapter-item expanded "><a href="chapter_4-02.html"><strong aria-hidden="true">4.2.</strong> Mutex</a></li><li class="chapter-item expanded "><a href="chapter_4-03.html"><strong aria-hidden="true">4.3.</strong> Message Queues</a></li></ol></li><li class="chapter-item expanded "><a href="chapter_5.html"><strong aria-hidden="true">5.</strong> Device Driver Intro</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>© <a href="https://simplycreate.online/">simplycreate</a></p>
+<h1 id="the-zephyr-guide"><a class="header" href="#the-zephyr-guide">The Zephyr Guide</a></h1>
+<p>Hello.</p>
+<p>This book will cover all basic aspects of the Zephyr RTOS, to help you get started quickly. Primarily though it will be concerned with the peripheral API, since this is the most I struggled with starting, and is the least well documented in the official docs. A rough overview is as follows:</p>
+<ul>
+<li>
+<p>Environment Setup</p>
+</li>
+<li>
+<p>Kernel API - Primitives</p>
+</li>
+<li>
+<p>Basic Peripherals API</p>
+</li>
+<li>
+<p>Kernel API - Advanced</p>
+</li>
+<li>
+<p>Device Drivers</p>
+</li>
+</ul>
+<p>So buckle up and enjoy the ride...</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<p>Zephyr is currently the prefered RTOS for new embedded product projects. Especially for IoT related projects. Considering that 99% of embedded projects these days is IoT, it is no surprise that Zephyr is the current mainline RTOS taking on the previous mainstay the freeRTOS.</p>
+<p>In this text we will go through the basics of Zephyr, enough to get started quickly. Some advanced topics are later covered including a guide porting to a new board.</p>
+<h2 id="prerequisites"><a class="header" href="#prerequisites">Prerequisites</a></h2>
+<p>The hardware required to follow along is the <a href="https://docs.zephyrproject.org/2.6.0/boards/arm/bbc_microbit_v2/doc/index.html">BBC micro:bit v2</a>*. And obviously a host computer, preferably running a recent edition of Linux. You should have a good grasp of the C language. Previous knowledege in embedded development (MCUs, reading datasheets, protocols, etc) is certainly helpful.</p>
+<p>* Currently the book targets the stm32f103c8t6 bluepill. I'll re-adjust to the micro:bit v2.</p>
+<h2 id="source-code"><a class="header" href="#source-code">Source Code</a></h2>
+<p>The source code for this book is available on the <a href="https://github.com/ntn888/zephyr-guide">Github repository</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
+<p>The official docs have a great section on getting the environment setup. (That's about all that's good of the offical docs IMO)
+See the <a href="https://docs.zephyrproject.org/latest/getting_started/index.html">Getting Started Guide</a>.</p>
+<p>A follow up to this, the <a href="https://docs.zephyrproject.org/latest/application/index.html">Application Development</a> page explaining about how to go about creating a new application folder structure from scratch, is also good.</p>
+<p>Once you get this under the belt, you're ready to start building Zephyr applications. This book provides easy hand-holding in the initial phases. So flip over, and let's get started.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="the-kernel-api---threads"><a class="header" href="#the-kernel-api---threads">The Kernel API - Threads</a></h1>
+<p>We will now look at the minimum Kernel API required to get going with the Peripherals. We will now look at the Threads API in this section. First the concepts.</p>
+<h2 id="real-time-system"><a class="header" href="#real-time-system">Real-Time System</a></h2>
+<p>Real-time systems are characterized by the severe consequences that result if logical as well as timing correctness properties of the system are not met. Two types of real-time systems exist: soft and hard. In a soft real-time system, tasks are performed by the system as fast as possible, but the tasks don’t have to finish by specific times. In hard real-time systems, tasks have to be performed not only correctly but on time. Most real-time systems have a combination of soft and hard requirements. Real-time applications cover a wide range, but most real-time systems are embedded.</p>
+<p>Real-time software applications are typically more difficult to design than non-real-time applications. This chapter describes real-time concepts.</p>
+<h2 id="rtos"><a class="header" href="#rtos">RTOS</a></h2>
+<p>What is an RTOS?</p>
+<p>RTOSes include a component called the <em>kernel</em>. The kernel is responsible for task management in a multitasking system.</p>
+<p>Multitasking can be achieved without an RTOS. This can be done in a <em>super-loop</em>. Small systems of low complexity are designed this way. It is upto the application to manage the scheduling between tasks. But this is error-prone and most notably, if a code change is made, the timing of the loop is affected.</p>
+<p>The RTOS abstracts this away for us. And brings in the concept called <em>threads</em>. A firmware designer splits the related work responsible for a portion of the solution to be done into individual threads. The kernel performs the <em>context switching</em>, ie: save the current thread context (CPU registers) in the current task storage area then resume execution of new code<sup class="footnote-reference"><a href="#1">1</a></sup>. Each thread is assigned a <em>priority</em>. Each thread is an infinite loop that can be in any one of the 6 states; see the diagram below.</p>
+<p>A task is ready when it can execute but its priority is less than the currently running task. A task is running when it has control of the CPU. A task is waiting when it requires the occurrence of an event (for example, waiting for an I/O operation to complete, a shared resource to be available, a timing pulse to occur, or time to expire). Finally a task is in suspended state when it is explicitly requested by the code (either within itself or another thread).</p>
+<p><img src="./images/thread_states.svg" alt="the 6 thread states" /></p>
+<p>You may want to ask, when should I use an RTOS?</p>
+<p>- The answer is ALWAYS.
+These days the embedded system landscape has changed that such is the case. For example the bluepill<sup class="footnote-reference"><a href="#2">2</a></sup> with 128k flash and 20K RAM can be had for a fraction of a dollar.</p>
+<p>In addition to the kernel, an RTOS can include device drivers and peripheral management as in the case of Zephyr.
+Now that we have an understanding of the kernel and threads, let's see the implementation in Zephyr.</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>This adds overhead, the biggest downsides of using RTOS.</p>
+</div>
+<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+<p>https://docs.zephyrproject.org/2.6.0/boards/arm/stm32_min_dev/doc/index.html</p>
+</div>
+<h2 id="thread-creation"><a class="header" href="#thread-creation">Thread Creation</a></h2>
+<pre><code>define MY_STACK_SIZE 500
+define MY_PRIORITY 5
+
+extern void my_entry_point(void *, void *, void *);
+
+K_THREAD_STACK_DEFINE(my_stack_area, MY_STACK_SIZE);
+struct k_thread my_thread_data;
+
+k_tid_t my_tid = k_thread_create(&amp;my_thread_data, my_stack_area,
+                                 K_THREAD_STACK_SIZEOF(my_stack_area),
+                                 my_entry_point,
+                                 NULL, NULL, NULL,
+                                 MY_PRIORITY, 0, K_NO_WAIT);
+</code></pre>
+<p>The preceding code spawns a thread immediately. We will study the arguments of the above function one at a time.</p>
+<p><code>&amp;my_thread_data</code>: this is of type struct <code>k_thread</code> defined in <code>thread.h</code>. see definition in <a href="https://docs.zephyrproject.org/latest/reference/kernel/threads/index.html#structk__thread">docs</a>.</p>
+<p><code>my_stack_area</code>: Pointer to the stack space. </p>
+<p>The above C structs must be initialised using the above shown functions before using in the creation function! See <a href="https://docs.zephyrproject.org/latest/reference/kernel/threads/index.html#c.k_thread_create">here</a> for more info.</p>
+<p><code>my_entry_point</code>: the entry point function (user defined), that takes upto 3 arguments. It's passed 'NULL' in this example.</p>
+<p><code>MY_PRIORITY</code>: the priority assigned for this thread. We will discuss priorities in detail below.</p>
+<p><code>timeout</code>: the amount of time in milliseconds to wait before the kernel actually starts the thread. Here it's <code>K_NO_WAIT</code>; ie 0.</p>
+<h2 id="thread-priorities"><a class="header" href="#thread-priorities">Thread Priorities</a></h2>
+<p>There are two classes of threads:</p>
+<ul>
+<li>cooperative thread (cannot be pre-empted): negative priority. Ideally used for device drivers and critical work.</li>
+<li>preemptible thread: positive priotity</li>
+</ul>
+<p>Note that thread priorities can be changed later in the program. The kernel natively supports unlimited priority levels. But in a real application, it's as follows:</p>
+<p><img src="./images/priorities.svg" alt="priorities" /></p>
+<p>As can be seen, <code>CONFIG_NUM_COOP_PRIORITIES</code> and <code>CONFIG_NUM_PREEMPT_PRIORITIES</code> specify the limits of usable priority values for the specific application.</p>
+<h3 id="notable-thread-option"><a class="header" href="#notable-thread-option">Notable thread option</a></h3>
+<ul>
+<li>K_ESSENTIAL: if the thread terminates, treat as system failure! default: not enabled.</li>
+</ul>
+<h2 id="thread-termination"><a class="header" href="#thread-termination">Thread termination</a></h2>
+<p>Once a thread is started it runs forever. A thread may terminate by returning to the caller. ie 'return x'. The thread must be responsible for releasing any held resourses.
+To wait until another thread terminates use <code>k_thread_join()</code>.
+<code>k_thread_abort()</code> (ungracefully)  terminates the thread. Can be also used from within an external thread. It's not recommended to use this function as it leads to unfreed resources.</p>
+<h2 id="notable-system-threads"><a class="header" href="#notable-system-threads">Notable system threads</a></h2>
+<p>These are <em>essential threads</em> that are always present in an application.</p>
+<h3 id="main-thread"><a class="header" href="#main-thread">main thread</a></h3>
+<p>By default has a priority of 0 (highest pre-emptive). Performs kernel initialisation and runs the <code>main()</code> function.</p>
+<h3 id="idle-thread"><a class="header" href="#idle-thread">idle thread</a></h3>
+<p>Executes when no work. Puts the processor to auto- powersave. Always has the lowest priority.</p>
+<h2 id="delays"><a class="header" href="#delays">Delays</a></h2>
+<p>Use <code>k_sleep()</code> to do a delay within a thread. <code>k_msleep()</code> is a more useful version where you supply the delay in milliseconds. An inactive thread that's in this state can be woken up from another thread prematurely by <code>k_wakeup()</code>. If the delay is too short to warrant pre-emption use the blocking function <code>k_busy_wait()</code>.</p>
+<h2 id="simple-thread-example"><a class="header" href="#simple-thread-example">Simple thread example</a></h2>
+<p>We will see an example built on the above concepts and study it...</p>
+<pre><code>#include &lt;zephyr.h&gt;
+#include &lt;sys/printk.h&gt;
+
+#define MY_STACK_SIZE 1024
+#define MY_PRIORITY 7
+
+void* thread1(void) {
+	while(1) {
+		printk(&quot;thread1\n&quot;);
+		k_msleep(2000);		// sleep 2s
+	}
+	return NULL;
+}
+
+void* thread2(void) {
+	while(1) {
+		printk(&quot;thread2\n&quot;);
+		k_msleep(2000);		// sleep 2s
+	}
+	return NULL;
+}
+
+K_THREAD_DEFINE(thread1_id, MY_STACK_SIZE, thread1, NULL, NULL, NULL,
+		MY_PRIORITY, 0, 0);
+K_THREAD_DEFINE(thread2_id, MY_STACK_SIZE, thread2, NULL, NULL, NULL,
+		MY_PRIORITY, 0, 0);
+
+</code></pre>
+<p>The first line includes the 'zephyr.h' file which in turn includes the kernel. Which enables the kernel subsystem which is the subject of our topic here. The second line imports the print subsytem which we use here to print though the UART.</p>
+<p>We are writing two individual thread functions (to keep things simple) that'll be invoked next. Here we are using the short-hand method of creating threads whick is functionally similar to the function explained earlier. This is specified in the <a href="https://docs.zephyrproject.org/latest/reference/kernel/threads/index.html#spawning-a-thread">docs</a>.</p>
+<p>Open up a terminal and fire-up a <em>screen</em> session on the serial device to which the micro:bit is connected to; typically <code>/dev/ttyUSB0</code>. Like so:</p>
+<pre><code>&gt; screen /dev/ttyUSB0 115200
+</code></pre>
+<p>You should see a similar alternating prompt output:</p>
+<pre><code>thread1
+thread2
+thread1
+thread2
+thread1
+thread2
+thread1
+thread2
+</code></pre>
+<p>You may note that the board you're using has several uart peripherals (eg. uart1, uart2). The default one that's used is defined in your board's dts file. It's defined as <code>zephyr,console</code>. In our case it's the uart2.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="basic-peripherals-api"><a class="header" href="#basic-peripherals-api">Basic Peripherals API</a></h1>
+<p>In this section we will see how to operate the GPIO, timers and the PWM.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="device-tree-101"><a class="header" href="#device-tree-101">Device Tree 101</a></h1>
+<p>Zephyr uses the device tree, a concept borrowed from Linux. It is a prerequisite to understand this before making any additions to the target board (Zephyr has a predefined set of popular boards, see <a href="https://docs.zephyrproject.org/latest/boards/index.html">here</a>). However we will cover it now before our discussion on peripheral APIs since they build on this and understanding the device tree could ease the process.</p>
+<p>But there is already a good video preliminary on <a href="https://www.youtube.com/watch?v=a9CZ1Uk3OYQ&amp;t=6105s">Youtube</a> that'll help you get started. It's quite long (~ 2 hours) and informative. This will help you navigate the device tree specification viewable on <a href="https://www.devicetree.org/">devicetree.org</a> to fill in the gaps.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gpio"><a class="header" href="#gpio">GPIO</a></h1>
+<p>We will first discuss the GPIO - the most basic peripheral on an MCU.</p>
+<p>As basic functionality of GPIOs, we set the output levels using the following commands:</p>
+<pre><code>    gpio_pin_toggle_dt(const struct gpio_dt_spec *spec);
+</code></pre>
+<pre><code>    gpio_pin_set_dt(const struct gpio_dt_spec *spec, int value);
+</code></pre>
+<p>Value 0 sets the pin in logical 0 / inactive state. Any value other than 0 sets the pin in logical 1 / active state.</p>
+<pre><code>int i = gpio_pin_get_dt(const struct gpio_dt_spec *spec);
+</code></pre>
+<p>1 – If pin logical value is 1 / active. 0 – If pin logical value is 0 / inactive.</p>
+<p>the *_dt functions are a variant for ones without the suffix. For example, gpio_pin_toggle_dt(spec) is:</p>
+<pre><code>gpio_pin_toggle(spec-&gt;port, spec-&gt;pin);
+</code></pre>
+<h2 id="gpio-config"><a class="header" href="#gpio-config">GPIO Config</a></h2>
+<p>We must initialse and configure a GPIO pin before we can use it. Use the following command:</p>
+<pre><code>gpio_pin_configure_dt(const struct gpio_dt_spec *spec, gpio_flags_t extra_flags);
+</code></pre>
+<p>Remember to set the correct Pin direction [GPIO_INPUT | GPIO_OUTPUT_INACTIVE | GPIO_OUTPUT_ACTIVE] using the flags.</p>
+<h2 id="init-structure"><a class="header" href="#init-structure">Init Structure</a></h2>
+<p>Before we could use the above GPIO API, the gpio struct must be defined and assigned:</p>
+<pre><code>static const struct gpio_dt_spec myled = GPIO_DT_SPEC_GET(&lt;node_id&gt;, gpios);
+</code></pre>
+<p>The reference page for <a href="https://docs.zephyrproject.org/latest/reference/peripherals/gpio.html">GPIO</a> details the above functions and also lists other flags that can be used.</p>
+<h3 id="example---add-an-external-button"><a class="header" href="#example---add-an-external-button">Example - add an external button</a></h3>
+<p>This will require writing an overlay file. And use the GPIO API.</p>
+<p>First create the <code>boards/</code> folder in a new app directory. See <a href="./chapter_1.html#Installation">Installation</a> for creating an empty app template. And in the directory create the file &quot;stm32_min_dev_blue.overlay&quot;, with the following contents. This will be the device tree for the external button addition.</p>
+<pre><code>/ {
+	gpio_keys {
+		compatible = &quot;gpio-keys&quot;;
+		butn: butn {
+			label = &quot;Key&quot;;
+			gpios = &lt;&amp;gpioa 0 GPIO_ACTIVE_LOW&gt;;
+		};
+	};
+
+	aliases {
+		butn0 = &amp;butn;
+	};
+};
+</code></pre>
+<p>Wire up a button to the stm32 board with a pull up resistor like this:</p>
+<p>&lt; image for connecting button to PA0 &gt;</p>
+<p>Using the concepts discussed above; here is the final code for button prompted blink:</p>
+<pre><code>#include &lt;zephyr.h&gt;
+#include &lt;drivers/gpio.h&gt;
+
+/* The devicetree node identifier for the &quot;led0&quot; alias. */
+#define LED0_NODE DT_ALIAS(led0)
+
+/*
+ * A build error on this line means your board is unsupported.
+ * See the sample documentation for information on how to fix this.
+ */
+static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
+static const struct gpio_dt_spec specb = GPIO_DT_SPEC_GET(DT_ALIAS(butn0), gpios);
+
+void main(void)
+{
+	int ret;
+
+	if (!device_is_ready(led.port)) {
+		return;
+	}
+	if (!device_is_ready(specb.port)) {
+		return;
+	}
+
+	ret = gpio_pin_configure_dt(&amp;led, GPIO_OUTPUT_ACTIVE);
+	if (ret &lt; 0) {
+		return;
+	}
+	ret = gpio_pin_configure_dt(&amp;specb, GPIO_INPUT);
+	if (ret &lt; 0) {
+		return;
+	}
+
+	while (1) {
+		if (gpio_pin_get(specb.port, specb.pin)) {
+			gpio_pin_set(led.port, led.pin, 1);
+		}
+			
+		else {
+			gpio_pin_set(led.port, led.pin, 0);
+		}
+	}
+}
+</code></pre>
+<p>We will now discuss the code above in detail.</p>
+<p>The first line includes the 'zephyr.h' file which in turn includes the kernel. Which enables the kernel subsystem as we saw in the previous chapter.</p>
+<p>The second line speaks for itself. It includes the 'gpio' related API functions that we will use here.</p>
+<p>Further down we use the function <code>GPIO_DT_SPEC_GET</code> to initialise a LED device C structure, as we have seen in the previous section. We do the same for 'specb' the struct for the button pin.</p>
+<p>Then inside main the first thing we do is do the mandatory check to see if the device is ready for use. This indicates whether the provided device pointer is for a device known to be in a state where it can be used with its standard API. Using a device that does not return true for this check, results in undefined behaviour.</p>
+<p>This is followed by the pin configuration as we have seen earlieer. Inside the while loop is the program logic. It simply relays the pin state of the button to the LED pin.</p>
+<p>This is a very basic demonstration of push button with no debounce mechanism. The led may inadvertently toggle multiple times for a single push.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="interrupts"><a class="header" href="#interrupts">Interrupts</a></h1>
+<p>We will continue on our discussions with the GPIO with looking at interrupts. First for some prerequisites...</p>
+<p>An Interrupt Service Routine (ISR) has the following properties:</p>
+<ul>
+<li>IRQ signal (that triggers the ISR)</li>
+<li>priority level</li>
+<li>interrupt handler function</li>
+<li>argument value passed to the function</li>
+</ul>
+<p>Other notable facts:</p>
+<ul>
+<li>Only a single ISR can be defined for an IRQ</li>
+<li>But multiple ISRs can utilise the same function</li>
+<li>Zephyr supports interrupt nesting. ie, higher priority interrupt can interrupt a running ISR</li>
+</ul>
+<p>Use the following functions to setup an ISR:</p>
+<pre><code>IRQ_CONNECT(MY_DEV_IRQ, MY_DEV_PRIO, my_isr, MY_ISR_ARG, MY_IRQ_FLAGS);
+irq_enable(MY_DEV_IRQ);
+</code></pre>
+<p>See <a href="https://docs.zephyrproject.org/latest/reference/kernel/other/interrupts.html#id5">Implementation</a> for an example.</p>
+<h3 id="disabling-interrupts"><a class="header" href="#disabling-interrupts">Disabling interrupts</a></h3>
+<p>To prevent IRQs when a particular thread is running use the functions inside that thread to block (and unblock) any interrupts.</p>
+<pre><code>irq_lock()
+irq_unlock()
+</code></pre>
+<p>Note that if this thread is pre-empted by another one and is not the active thread, interrupts can occur.</p>
+<h2 id="gpio-interrupts"><a class="header" href="#gpio-interrupts">GPIO Interrupts</a></h2>
+<pre><code>#include &lt;zephyr.h&gt;
+#include &lt;drivers/gpio.h&gt;
+#include &lt;sys/util.h&gt;
+#include &lt;inttypes.h&gt;
+
+/* 1000 msec = 1 sec */
+#define SLEEP_TIME_MS   1000
+
+/* The devicetree node identifier for the &quot;led0&quot; alias. */
+#define LED0_NODE DT_ALIAS(led0)
+
+static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
+static const struct gpio_dt_spec specb = GPIO_DT_SPEC_GET(DT_ALIAS(butn0), gpios);
+
+static struct gpio_callback button_cb_data;
+
+void button_pressed(const struct device *dev, struct gpio_callback *cb,
+		    uint32_t pins)
+{
+	gpio_pin_toggle_dt(&amp;led);
+}
+
+void main(void)
+{
+	int ret;
+
+	if (!device_is_ready(led.port)) {
+		return;
+	}
+	if (!device_is_ready(specb.port)) {
+		return;
+	}
+
+	ret = gpio_pin_configure_dt(&amp;led, GPIO_OUTPUT_ACTIVE);
+	if (ret &lt; 0) {
+		return;
+	}
+	ret = gpio_pin_configure_dt(&amp;specb, GPIO_INPUT);
+	if (ret &lt; 0) {
+		return;
+	}
+	ret = gpio_pin_interrupt_configure_dt(&amp;specb,
+					      GPIO_INT_EDGE_TO_ACTIVE);
+	if (ret != 0) {
+		printk(&quot;Error %d: failed to configure interrupt on %s pin %d\n&quot;,
+			ret, specb.port-&gt;name, specb.pin);
+		return;
+	}
+
+	gpio_init_callback(&amp;button_cb_data, button_pressed, BIT(specb.pin));
+	gpio_add_callback(specb.port, &amp;button_cb_data);
+
+	while (1) {
+	}
+}
+
+</code></pre>
+<p>The above is a modified example from the samples folder 'basic-&gt;button'. It simply toggles the LED when the button is pushed.</p>
+<p>In principle, what we do is write a 'callback function' that'll be called when the interrupt is triggered, by indicating this function in the interrupt setup. The interrupt is setup in the following lines:</p>
+<pre><code>gpio_init_callback(&amp;button_cb_data, button_pressed, BIT(specb.pin));
+gpio_add_callback(specb.port, &amp;button_cb_data);
+</code></pre>
+<p>The first argument to the 'init' function is the struct defined for this purpose earlier as type: <code>gpio_callback</code>. The second argument is our desired function to run when interrupt triggers.</p>
+<p>Much of the code is hopefully self-explanatory. Study the example and follow this layout when you define interrupts in your application.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="timers"><a class="header" href="#timers">Timers</a></h1>
+<p>Basic timing, there is nothing much to it. We just need a couple of functions for basic timing. If you are familiar with tick based timing in another RTOS, it's exactly the same.</p>
+<pre><code>// k_uptime_get_32();        // the original 64bit function is blocking and inefficient, use 32bit if possible
+
+int time_stamp;
+int milliseconds_spent;
+
+time_stamp = k_uptime_get_32();
+
+&lt;do stuff&gt;
+
+milliseconds_spent = k_uptime_delta(&amp;time_stamp);
+
+</code></pre>
+<h2 id="hardware-timers-with-interrupts"><a class="header" href="#hardware-timers-with-interrupts">Hardware Timers with Interrupts</a></h2>
+<p>Some discussion on nRF52 HW timers:</p>
+<p><img src="./images/nrf52833_timer-block.svg" alt="Block schematic for timer/counter" /></p>
+<p>The timer/counter runs on the high-frequency clock source (HFCLK) and includes a four-bit (1/2X) prescaler that can divide the timer input clock from the HFCLK controller. Clock source selection between PCLK16M and PCLK1M is automatic according to TIMER base frequency set by the prescaler. The TIMER base frequency is always given as 16 MHz divided by the prescaler value.</p>
+<p>The good thing about Zephyr's timer API (as with other peripheral APIs) is that it abstracts away all the device specific details...</p>
+<p>First we acquire the device timer:
+In main:</p>
+<pre><code>	const struct device *counter_dev;
+
+	counter_dev = device_get_binding(TIMER);
+	if (counter_dev == NULL) {
+		printk(&quot;Device not found\n&quot;);
+		return;
+	}
+</code></pre>
+<p>where TIMER is bound to an appropriately initiated device in the tree. As long as your board/chip is in the Zephyr supported list this has been done for you! All you have to do is to define TIMER to the selected device in your application.</p>
+<p>Then the basic principle is that we set a callback function using the <code>alarm_cfg.callback</code> property and setup the 'alarm' using <code>counter_set_channel_alarm()</code>. For this we initiate a <code>counter_alarm_cfg</code> struct to hold the desired counter settings. Also set the desired delay with <code>alarm_cfg.ticks</code>. See the official <a href="https://docs.zephyrproject.org/latest/reference/peripherals/counter.html#c.counter_alarm_cfg">explanation</a>. Finally call the set alarm function. It has a very similar structure to setting interrupts as seen in the previous topic, considering the alarm is basically an interrupt.</p>
+<p>See the sample application in 'samples/drivers/counters/alarm'.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="pwm"><a class="header" href="#pwm">PWM</a></h1>
+<p><img src="./images/breather_led.gif" alt="Breather Led" /></p>
+<h2 id="step-1-breather-led"><a class="header" href="#step-1-breather-led">Step 1: Breather LED</a></h2>
+<p>&lt; sample: samples/basic/fade_led &gt;</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit ipsum, bibendum eget semper ac, eleifend sit amet ex. In hac habitasse platea dictumst. Morbi tempus metus a nibh blandit condimentum. Quisque quis neque urna. Etiam eget sapien ac lacus accumsan tincidunt nec nec felis. Quisque placerat, justo vitae congue efficitur, est est volutpat magna, sit amet consectetur purus lorem sed neque. Ut aliquet elit a ultrices hendrerit. In hac habitasse platea dictumst. Pellentesque quis eros lacinia, porttitor justo a, suscipit erat. Etiam vestibulum nibh quis mattis laoreet. Aenean sed lacus in massa elementum dapibus. Maecenas at arcu condimentum, consectetur ipsum a, dignissim nibh. Nulla facilisi. Suspendisse potenti. Aliquam eleifend ultrices gravida. Proin lacinia pellentesque faucibus.</p>
+<h2 id="step-2-breather-led-with-dma--interrupts-idle-cpu"><a class="header" href="#step-2-breather-led-with-dma--interrupts-idle-cpu">Step 2: Breather LED with DMA &amp; Interrupts (Idle CPU)</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="kernel-facilities---messaging"><a class="header" href="#kernel-facilities---messaging">Kernel Facilities - Messaging</a></h1>
+<p>In chapter 2 we saw that the kernel provides context switching. The kernel also performs another duty, it's also responsible for the communication between tasks. In this chapter we will study this.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="semaphores"><a class="header" href="#semaphores">Semaphores</a></h1>
+<p>The easiest way for threads to communicate with each other is through shared data structures. This process is especially easy when all threads exist in a single address space and can reference elements, such as global variables, pointers, buffers, linked lists, and ring buffers, ie use global variables. Although sharing data simplifies the exchange of information, you must ensure that each task has exclusive access to the data to avoid contention and data corruption.</p>
+<p>To illustrate the problem, the figure below shows a hypothetical example of two threads reading and writing the same variable. In this example, thread A reads the variable and then writes a new value to it, but the write operation takes two memory cycles. If thread B reads the same variable between the two write cycles, it will see an inconsistent value.</p>
+<p><img src="./images/race-condition.svg" alt="Interleaved memory cycles with two threads" /></p>
+<p>To solve this problem, the threads have to use a lock that will allow only one thread to access the variable at a time.</p>
+<h3 id="test-and-set-operations"><a class="header" href="#test-and-set-operations">Test-and-Set Operations</a></h3>
+<p>The simplest way to mitigate this situation. Two functions could agree that to access a resource, they must check a global variable and if the variable is 0, the function has access to the resource. To prevent the other function from accessing the resource, however, the first function that gets the resource sets the variable to 1, which is called a test-and-set (or TAS) operation. We would also have to disable the interrupts however. Pseudocode:</p>
+<pre><code>Disable interrupts;
+if (‘Access Variable’ is 0) {
+    Set variable to 1;
+    Reenable interrupts;
+    Access the resource;
+    Disable interrupts;
+    Set the ‘Access Variable’ back to 0;
+    Reenable interrupts;
+} else {
+    Reenable interrupts;
+    /* You don’t have access to the resource, try back later; */
+}
+</code></pre>
+<h2 id="using-semaphores"><a class="header" href="#using-semaphores">Using Semaphores</a></h2>
+<p>A semaphore is a key that your code acquires in order to continue execution. If the semaphore is already in use, the requesting task is suspended until the semaphore is released by its current owner. In other words, the requesting task says: “Give me the key. If someone else is using it, I am willing to wait for it!” Two types of semaphores exist: binary semaphores and counting semaphores. As its name implies, a binary semaphore can only take two values: 0 or 1. A counting semaphore allows values between 0 and &lt; what's the MAX?&gt; In the context of Zephyr, counting semaphores are simply referred as semaphores, while binary semaphores are mutexes(the implementation of which we will see in the next section). Along with the semaphore’s value, the kernel also needs to keep track of tasks waiting for the semaphore’s availability.</p>
+<p>A value must be provided when a semaphore is created. This is the desired maximum concurrent threads that can hold the semaphore. Waiting list always starts empty. When a semaphore is accessed by a task this value will get decremented; gradually to zero when no more threads can acquire it... When this happens, we will start seeing threads in the waiting list.</p>
+<p>A desired task does a <code>WAIT</code> operation. Semaphore is checked (if &gt; 0), then decremented and handed over. Else the task waits until a predefined timeout. If the semaphore was busy, when it becomes available the task releases by performing a <code>SIGNAL</code> operation, the control is yeilded to the waiting task (semaphore is not incremented!). Any number of threads may wait on a locked mutex simultaneously. When the mutex becomes unlocked it is then locked by the highest-priority thread that has waited the longest. If however, the thread wasn't allowed to acquire the semaphore within the specified timeout, the requesting task is allowed to resume, which may then signal an error to the caller.</p>
+<p>See the official docs <a href="https://docs.zephyrproject.org/latest/reference/kernel/synchronization/semaphores.html#implementation">implementation</a> for function definitions. We will now see an example to illustrate the concept...</p>
+<pre><code>#include &lt;zephyr.h&gt;
+#include &lt;sys/printk.h&gt;
+
+#define MY_STACK_SIZE 1024
+#define MY_PRIORITY 7
+
+K_THREAD_STACK_DEFINE(my_stack_area, MY_STACK_SIZE);
+struct k_thread my_thread_data;
+
+K_THREAD_STACK_DEFINE(my_stack_area1, MY_STACK_SIZE);
+struct k_thread my_thread_data1;
+
+
+struct k_sem my_binary_sem;
+
+void print_thread(void *a, void *b, void *c)
+{
+    if (k_sem_take(&amp;my_binary_sem, K_MSEC(50)) != 0) {
+        printk(&quot;Input data not available!&quot;);
+    } else {
+        printk(&quot;\nEntered..\n&quot;);
+
+        //critical section
+        k_msleep(4000);      // sleep 4s
+
+        printk(&quot;\nJust Exiting...\n&quot;);
+    }
+}
+
+void main(void)
+{
+    k_sem_init(&amp;my_binary_sem, 1, 1); // configures a binary semaphore by setting its count to 1 and its limit to 1.
+
+    k_thread_create(&amp;my_thread_data, my_stack_area,
+                                 K_THREAD_STACK_SIZEOF(my_stack_area),
+                                 print_thread,
+                                 NULL, NULL, NULL,
+                                 MY_PRIORITY, 0, K_NO_WAIT);
+
+    k_msleep(2000);      // delay 2s
+    k_thread_create(&amp;my_thread_data1, my_stack_area1,
+                                 K_THREAD_STACK_SIZEOF(my_stack_area1),
+                                 print_thread,
+                                 NULL, NULL, NULL,
+                                 MY_PRIORITY, 0, K_NO_WAIT);
+    
+    while (1)
+    {
+        /* code */
+    }
+    
+}
+</code></pre>
+<p>Here we are just using a count/limit of 1 (binary semaphore) to keep things simple.</p>
+<p>2 threads are being created, one 2 seconds after the first one.
+But the first thread will sleep for 4 seconds after acquiring the lock.
+Thus the second thread will not enter immediately after it is called, it will enter 4 – 2 = 2 secs after it is called.
+And still the output is:</p>
+<pre><code>Entered..
+
+Just Exiting...
+
+Entered..
+
+Just Exiting...
+</code></pre>
+<p>instead of:</p>
+<pre><code>Entered..
+
+Entered..
+
+Just Exiting...
+
+Just Exiting...
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mutex"><a class="header" href="#mutex">Mutex</a></h1>
+<p>In contrast a mutex allows exclusive access to the resource from the thread. This is why it's called binary semaphore. You either have the lock or you don't. It is practically similar to initiating a semaphore with a value of one. Since we've seen the concepts already in the previous topic, you'll be equipped to read the page on <a href="https://docs.zephyrproject.org/latest/reference/kernel/synchronization/mutexes.html">Mutexes</a> in the official documentation.</p>
+<p>As an aid lookup the test sample on mutex available in the Zephyr source <code>zephyr/tests/kernel/mutex/sys_mutex/</code>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="message-queues"><a class="header" href="#message-queues">Message Queues</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="device-driver-intro"><a class="header" href="#device-driver-intro">Device Driver Intro</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+    </body>
+</html>
